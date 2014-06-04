@@ -1,0 +1,1 @@
+// Global Java script file
