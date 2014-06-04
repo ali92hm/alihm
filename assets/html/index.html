@@ -2,12 +2,124 @@
 <html lang="en">
 
 <head>
-	<title>My app</title>
+	<title>Ali Hajimirza</title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<!-- <link rel="shortcut icon" href="images/CrowdscribedTHUMB_TOP.png" /> -->
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	<script type="text/javascript" src="/components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="/components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="/components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="/styles/plain_css/nav-footer.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="/styles/plain_css/carousel.css">
 </head>
 
 
 <body>
-<h1> This is a static html file<h1>
+
+<!-- ================================================================== NAV BAR ============================================================================== -->
+	<div class="navbar-wrapper">
+		<div class="container">
+			<div class="navbar navbar-inverse">
+				<div class="navbar-inner">
+					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="brand" href="resume.pdf">Resume</a>
+
+					<div class="nav-collapse collapse">
+						<ul class="nav">
+							<li class="active"> <a href="index.html">Home</a> </li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="downloads.html">Downloads</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- ================================================================== carousel ============================================================================== -->
+	<div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+
+        <div class="item active">
+          <img src="metadata/img/crowdscribed.png" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>CrowdScribed Team</h1>
+              <p class="lead">CCEW's Spring 13 final presentation at Sam Noble Museum, University of Oklahoma</p>
+              <a class="btn btn-large btn-inverse" href="http://crowdscribed.com">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="metadata/img/tulsa.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Tulsa World</h1>
+              <p class="lead">Union high school FIRST robotics team was interviewed by Tulsa World. Photo by: James Gibbard, Tulsa World</p>
+              <a class="btn btn-large btn-inverse" href="http://www.tulsaworld.com/article.aspx/Union_students_building_robot_for_worldwide_competition/20110221_11_a13_cutlin159284">Tulsa World</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="metadata/img/slide-03.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+
+
+<!-- ================================================================== CONTAINER =========================================================================== -->
+
+	<div class="container">
+		<h3> About me </h3>
+		<div class="row">
+			<div style="font-size:18px; line-height: normal;" class="span9 about-me">
+				<div>
+					<p>I'm a computer science major and math minor student at the <a href="http://www.ou.edu/web.html">University of Oklahoma</a>, and also a developer intern at <a href="http://ccew.ou.edu/">The Center for the Creation of Economic Wealth (CCEW)</a>.</p>
+					<p>This is my personal website that I'll be posting the projects that I've done, and also the projects that I'm working on.<br>
+					The pdf version of my resume is available <a href="metadata/resume.pdf"> here</a>.</p>
+					You can read more about my projects and activities under the <a href="about.html"> About page</a>.
+					You can also download the completed project under the <a href="downloads.html"> Downloads page</a>, or the source code from my <a href="https://github.com/A92hm">GitHub</a> account. </p>
+					<p> All the code and softwares are under <a href="http://www.linfo.org/bsdlicense.html"> BSD License </a> that allows you to use the source code free of charge in your free and/or commercial projects. For more information visit <a href="license.html"> Text of License</a>.
+				</div>
+			</div>
+
+			<div class=" span3  success-indicators" id="twitter">
+				<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/Ali92HM" data-widget-id="336643080436457473">Tweets by @Ali92HM</a>
+			</div>
+		</div>
+	</div>
+
+<!-- ================================================================== FOOTER ============================================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p>Last modified: Sun May 22 11:38:28 2013 by Ali Hajimirza </p>
+        <p>Copyright © Ali Hajimirza</p>
+        <ul class="footer-links">
+          <li><a href="https://facebook.com/ali.hajimirza">Facebook</a></li>
+          <li class="muted">&middot;</li>
+          <li><a href="https://twitter.com/Ali92HM">Twitter</a></li>
+          <li class="muted">&middot;</li>
+          <li><a href="https://github.com/A92hm">Git</a></li>
+        </ul>
+      </div>
+    </footer>
 
 </body>
 

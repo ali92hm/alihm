@@ -8,11 +8,11 @@ module.exports = {
 
     app.get( '/', function (req, res, next){
       res.render('index', {
-        title: 'Page Title'
+        title: 'Ali Hajimirza'
       });
     });
 
-    app.get('/static', function(req, res, next){
+    app.get('/old', function(req, res, next){
       res.sendfile(path.join(__dirname, 'public/html', 'index.html'));
     });
 
