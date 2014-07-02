@@ -5,8 +5,6 @@ var request = require('request');
 module.exports = function (grunt) {
   require('time-grunt')(grunt);
   require('load-grunt-tasks')(grunt);
-  grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-sass');
 
   var reloadPort = 35729,
     files;
