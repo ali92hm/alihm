@@ -3,11 +3,9 @@
 var request = require('request');
 
 module.exports = function (grunt) {
-  // show elapsed time at the end
   require('time-grunt')(grunt);
-  // load all grunt tasks
   require('load-grunt-tasks')(grunt);
-grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-sass');
 
   var reloadPort = 35729,
