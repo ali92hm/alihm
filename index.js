@@ -19,7 +19,7 @@ app.use(function(req, res) {
   res.status(404).render('404', { title: '404' });
 });
 
-if (process.env.NODE_ENV == 'production') {
+if (app.get('env') === 'development') {
   module.export = app;
 } else {
   app.set('port', process.env.PORT || 3000);
