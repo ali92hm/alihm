@@ -3,7 +3,6 @@
 var request = require('request');
 
 module.exports = function (grunt) {
-  require('time-grunt')(grunt);
   require('load-grunt-tasks')(grunt);
 
   var reloadPort = 35729,

@@ -17,7 +17,7 @@ app.use(favicon(__dirname + '/public/imgs/favicon.ico'));
 routes(app);
 
 if (app.get('env') === 'production') {
-  module.export = app;
+  module.exports = app;
 } else {
   app.set('port', process.env.PORT || 3000);
   var server = app.listen(app.get('port'), function() {
