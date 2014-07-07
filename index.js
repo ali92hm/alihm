@@ -14,10 +14,7 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(__dirname + '/public/imgs/favicon.ico'));
-routes.init(app);
-app.use(function(req, res) {
-  res.status(404).render('404', { title: '404' });
-});
+routes(app);
 
 if (app.get('env') === 'production') {
   module.export = app;
