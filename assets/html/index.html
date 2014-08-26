@@ -1,126 +1,241 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<!--
+	Miniport 2.5 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Miniport by HTML5 UP</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/skel.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		<!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
+	</head>
+	<body>
 
-<head>
-	<title>Ali Hajimirza</title>
-	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-	<!-- <link rel="shortcut icon" href="images/CrowdscribedTHUMB_TOP.png" /> -->
-	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-	<script type="text/javascript" src="/components/jquery/dist/jquery.min.js"></script>
-	<script type="text/javascript" src="/components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" media="screen" href="/components/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" media="screen" href="/styles/plain_css/nav-footer.css">
-	<link rel="stylesheet" type="text/css" media="screen" href="/styles/plain_css/carousel.css">
-</head>
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="#top">Top</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
 
-
-<body>
-
-<!-- ================================================================== NAV BAR ============================================================================== -->
-	<div class="navbar-wrapper">
-		<div class="container">
-			<div class="navbar navbar-inverse">
-				<div class="navbar-inner">
-					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="brand" href="resume.pdf">Resume</a>
-
-					<div class="nav-collapse collapse">
-						<ul class="nav">
-							<li class="active"> <a href="index.html">Home</a> </li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="downloads.html">Downloads</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
+		<!-- Home -->
+			<div class="wrapper wrapper-style1 wrapper-first">
+				<article class="container" id="top">
+					<div class="row">
+						<div class="4u">
+							<span class="me image image-full"><img src="images/me.jpg" alt="" /></span>
+						</div>
+						<div class="8u">
+							<header>
+								<h1>Hi. I'm <strong>Jane Doe</strong>.</h1>
+							</header>
+							<p>And this is <strong>Miniport</strong>, a free, fully responsive HTML5 site template designed by <a href="http://n33.co/">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a> &amp; released under the <a href="http://html5up.net/license/">CCA license</a>.</p>
+							<a href="#work" class="button button-big">Learn about what I do</a>
+						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-<!-- ================================================================== carousel ============================================================================== -->
-	<div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-
-        <div class="item active">
-          <img src="metadata/img/crowdscribed.png" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>CrowdScribed Team</h1>
-              <p class="lead">CCEW's Spring 13 final presentation at Sam Noble Museum, University of Oklahoma</p>
-              <a class="btn btn-large btn-inverse" href="http://crowdscribed.com">Learn more</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="item">
-          <img src="metadata/img/tulsa.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Tulsa World</h1>
-              <p class="lead">Union high school FIRST robotics team was interviewed by Tulsa World. Photo by: James Gibbard, Tulsa World</p>
-              <a class="btn btn-large btn-inverse" href="http://www.tulsaworld.com/article.aspx/Union_students_building_robot_for_worldwide_competition/20110221_11_a13_cutlin159284">Tulsa World</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="item">
-          <img src="metadata/img/slide-03.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-    </div>
-
-
-<!-- ================================================================== CONTAINER =========================================================================== -->
-
-	<div class="container">
-		<h3> About me </h3>
-		<div class="row">
-			<div style="font-size:18px; line-height: normal;" class="span9 about-me">
-				<div>
-					<p>I'm a computer science major and math minor student at the <a href="http://www.ou.edu/web.html">University of Oklahoma</a>, and also a developer intern at <a href="http://ccew.ou.edu/">The Center for the Creation of Economic Wealth (CCEW)</a>.</p>
-					<p>This is my personal website that I'll be posting the projects that I've done, and also the projects that I'm working on.<br>
-					The pdf version of my resume is available <a href="metadata/resume.pdf"> here</a>.</p>
-					You can read more about my projects and activities under the <a href="about.html"> About page</a>.
-					You can also download the completed project under the <a href="downloads.html"> Downloads page</a>, or the source code from my <a href="https://github.com/A92hm">GitHub</a> account. </p>
-					<p> All the code and softwares are under <a href="http://www.linfo.org/bsdlicense.html"> BSD License </a> that allows you to use the source code free of charge in your free and/or commercial projects. For more information visit <a href="license.html"> Text of License</a>.
-				</div>
+				</article>
 			</div>
 
-			<div class=" span3  success-indicators" id="twitter">
-				<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/Ali92HM" data-widget-id="336643080436457473">Tweets by @Ali92HM</a>
+		<!-- Work -->
+			<div class="wrapper wrapper-style2">
+				<article id="work">
+					<header>
+						<h2>I design and build amazing things.</h2>
+						<span>Odio turpis amet sed consequat eget posuere consequat.</span>
+					</header>
+					<div class="container">
+						<div class="row">
+							<div class="4u">
+								<section class="box box-style1">
+									<span class="fa featured fa-comments-o"></span>
+									<h3>Consequat lorem</h3>
+									<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+								</section>
+							</div>
+							<div class="4u">
+								<section class="box box-style1">
+									<span class="fa featured fa-file-o"></span>
+									<h3>Lorem dolor tempus</h3>
+									<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+								</section>
+							</div>
+							<div class="4u">
+								<section class="box box-style1">
+									<span class="fa featured fa-thumbs-o-up"></span>
+									<h3>Feugiat posuere</h3>
+									<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+								</section>
+							</div>
+						</div>
+					</div>
+					<footer>
+						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+						<a href="#portfolio" class="button button-big">See some of my recent work</a>
+					</footer>
+				</article>
 			</div>
-		</div>
-	</div>
 
-<!-- ================================================================== FOOTER ============================================================================== -->
-    <footer class="footer">
-      <div class="container">
-        <p>Last modified: Sun May 22 11:38:28 2013 by Ali Hajimirza </p>
-        <p>Copyright © Ali Hajimirza</p>
-        <ul class="footer-links">
-          <li><a href="https://facebook.com/ali.hajimirza">Facebook</a></li>
-          <li class="muted">&middot;</li>
-          <li><a href="https://twitter.com/Ali92HM">Twitter</a></li>
-          <li class="muted">&middot;</li>
-          <li><a href="https://github.com/A92hm">Git</a></li>
-        </ul>
-      </div>
-    </footer>
+		<!-- Portfolio -->
+			<div class="wrapper wrapper-style3">
+				<article id="portfolio">
+					<header>
+						<h2>Awesome work makes happy clients.</h2>
+						<span>Proin odio consequat  sapien vestibulum ipsum primis sed amet consequat lorem dolore feugiat lorem ipsum dolore.</span>
+					</header>
+					<div class="container">
+						<div class="row">
+							<div class="12u">
+							</div>
+						</div>
+						<div class="row">
+							<div class="4u">
+								<article class="box box-style2">
+									<a href="http://flypixel.com/generic-smartphone/8949517882265310" class="image image-full"><img src="images/portfolio01.jpg" alt="" /></a>
+									<h3><a href="http://flypixel.com/generic-smartphone/8949517882265310">Magna feugiat</a></h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="box box-style2">
+									<a href="http://flypixel.com/n33" class="image image-full"><img src="images/portfolio02.jpg" alt="" /></a>
+									<h3><a href="http://flypixel.com/n33">Veroeros primis</a></h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="box box-style2">
+									<a href="http://flypixel.com/wood-ui-kit/3574765984616310" class="image image-full"><img src="images/portfolio03.jpg" alt="" /></a>
+									<h3><a href="http://flypixel.com/wood-ui-kit/3574765984616310">Lorem ipsum</a></h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div>
+						</div>
+						<div class="row">
+							<div class="4u">
+								<article class="box box-style2">
+									<a href="http://flypixel.com/n33-pattern-set-1/3522389001865317" class="image image-full"><img src="images/portfolio04.jpg" alt="" /></a>
+									<h3><a href="http://flypixel.com/n33-pattern-set-1/3522389001865317">Tempus dolore</a></h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="box box-style2">
+									<a href="http://flypixel.com/cityscape/9803996277226316" class="image image-full"><img src="images/portfolio05.jpg" alt="" /></a>
+									<h3><a href="http://flypixel.com/cityscape/9803996277226316">Feugiat aliquam</a></h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="box box-style2">
+									<a href="http://flypixel.com/n33" class="image image-full"><img src="images/portfolio06.jpg" alt="" /></a>
+									<h3><a href="http://flypixel.com/n33">Sed amet ornare</a></h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div>
+						</div>
+					</div>
+					<footer>
+						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+						<a href="#contact" class="button button-big">Get in touch with me</a>
+					</footer>
+				</article>
+			</div>
 
-</body>
+		<!-- Contact -->
+			<div class="wrapper wrapper-style4">
+				<article id="contact" class="container small">
+					<header>
+						<h2>Want to hire me? Get in touch!</h2>
+						<span>Ornare nulla proin odio consequat sapien vestibulum ipsum sed lorem.</span>
+					</header>
+					<div>
+						<div class="row">
+							<div class="12u">
+								<form method="post" action="#">
+									<div>
+										<div class="row half">
+											<div class="6u">
+												<input type="text" name="name" id="name" placeholder="Name" />
+											</div>
+											<div class="6u">
+												<input type="text" name="email" id="email" placeholder="Email" />
+											</div>
+										</div>
+										<div class="row half">
+											<div class="12u">
+												<input type="text" name="subject" id="subject" placeholder="Subject" />
+											</div>
+										</div>
+										<div class="row half">
+											<div class="12u">
+												<textarea name="message" id="message" placeholder="Message"></textarea>
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<a href="#" class="button form-button-submit">Send Message</a>
+												<a href="#" class="button button-alt form-button-reset">Clear Form</a>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="row">
+							<div class="12u">
+								<hr />
+								<h3>Find me on ...</h3>
+								<ul class="social">
+									<li class="twitter"><a href="http://twitter.com/n33co" class="fa fa-twitter"><span>Twitter</span></a></li>
+									<li class="facebook"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
+									<li class="dribbble"><a href="http://dribbble.com/n33" class="fa fa-dribbble"><span>Dribbble</span></a></li>
+									<li class="linkedin"><a href="#" class="fa fa-linkedin"><span>LinkedIn</span></a></li>
+									<li class="tumblr"><a href="#" class="fa fa-tumblr"><span>Tumblr</span></a></li>
+									<li class="googleplus"><a href="#" class="fa fa-google-plus"><span>Google+</span></a></li>
+									<li class="github"><a href="http://github.com/n33" class="fa fa-github"><span>Github</span></a></li>
+									<!--
+									<li class="rss"><a href="#" class="fa fa-rss"><span>RSS</span></a></li>
+									<li class="instagram"><a href="#" class="fa fa-instagram"><span>Instagram</span></a></li>
+									<li class="foursquare"><a href="#" class="fa fa-foursquare"><span>Foursquare</span></a></li>
+									<li class="skype"><a href="#" class="fa fa-skype"><span>Skype</span></a></li>
+									<li class="soundcloud"><a href="#" class="fa fa-soundcloud"><span>Soundcloud</span></a></li>
+									<li class="youtube"><a href="#" class="fa fa-youtube"><span>YouTube</span></a></li>
+									<li class="blogger"><a href="#" class="fa fa-blogger"><span>Blogger</span></a></li>
+									<li class="flickr"><a href="#" class="fa fa-flickr"><span>Flickr</span></a></li>
+									<li class="vimeo"><a href="#" class="fa fa-vimeo"><span>Vimeo</span></a></li>
+									-->
+								</ul>
+								<hr />
+							</div>
+						</div>
+					</div>
+					<footer>
+						<ul id="copyright">
+							<li>&copy; 2013 Jane Doe</li>
+							<li>Images: <a href="http://fotogrph.com">fotogrph</a></li>
+							<li>Design: <a href="http://html5up.net/">HTML5 UP</a></li>
+						</ul>
+					</footer>
+				</article>
+			</div>
 
+
+	</body>
 </html>
