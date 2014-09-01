@@ -20,7 +20,7 @@ module.exports = function (grunt) {
         nospawn: true,
       },
       sass: {
-        files: ['assets/styles/**/*.sass'],
+        files: ['assets/styles/**/*.sass', 'assets/styles/**/*.scss'],
         tasks: ['sass'],
         options: {
           livereload: reloadPort
@@ -28,8 +28,7 @@ module.exports = function (grunt) {
       },
       js: {
         files: [
-          'index.js',
-          'routes.js',
+          'index.js'
         ],
         tasks: ['develop', 'delayed-livereload']
       },
@@ -44,7 +43,7 @@ module.exports = function (grunt) {
       },
       html: {
         files: [
-          'assets/html/**/*.html'
+          'assets/**/*.html'
         ],
         tasks: ['copy:html'],
         options: {
@@ -53,24 +52,18 @@ module.exports = function (grunt) {
       },
       images: {
         files: [
-          'assets/imgs/**'
+          'assets/images/**'
         ],
-        tasks: ['copy:imgs'],
+        tasks: ['copy:images'],
         options: {
           livereload: reloadPort
         }
       },
       css: {
         files: [
-          'assets/styles/plain_css/**/*.css'
+          'assets/styles/**/*.css'
         ],
         tasks: ['copy:css'],
-        options: {
-          livereload: reloadPort
-        }
-      },
-      jade: {
-        files: ['app/views/**/*.jade'],
         options: {
           livereload: reloadPort
         }
@@ -83,10 +76,8 @@ module.exports = function (grunt) {
       },
       all: [
         'Gruntfile.js',
-        'app.js',
-        'assets/js/**/*.js',
-        'app/**/*.js',
-   
+        'index.js',
+        'assets/js/**/*.js'   
       ]
     },
     // uglify javascript
@@ -106,7 +97,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: 'assets/styles',
-          src: ['**/*.sass', '**/*.css'],
+          src: ['**/*.sass', '**/*.scss'],
           dest: 'public/styles',
           ext: '.css'
         }],
@@ -120,9 +111,9 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: 'assets/imgs',
+          cwd: 'assets/images',
           src: '**/*.{png,jpg,jpeg}',
-          dest: 'public/imgs'
+          dest: 'public/images'
         }]
       }
     },
@@ -131,9 +122,9 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: 'assets/imgs',
+          cwd: 'assets/images',
           src: '{,*/}*.svg',
-          dest: 'public/imgs'
+          dest: 'public/images'
         }]
       }
     },
@@ -152,14 +143,20 @@ module.exports = function (grunt) {
       main: {
         expand: true,
         cwd: 'assets/',
-        src: ['js/**','imgs/**','html/**'],
+        src: ['js/**','images/**', 'styles/**/*.css' ,'**/*.html'],
         dest: 'public/',
       },
       html: {
         expand: true,
-        cwd: 'assets/html',
-        src: '**',
-        dest: 'public/html',
+        cwd: 'assets',
+        src: '**/*.html',
+        dest: 'public',
+      },
+      css: {
+        expand: true,
+        cwd: 'assets/styles',
+        src: '**/*.css',
+        dest: 'public/styles',
       },
       js: {
         expand: true,
@@ -167,17 +164,23 @@ module.exports = function (grunt) {
         src: '**',
         dest: 'public/js',
       },
-      imgs: {
+      images: {
         expand: true,
-        cwd: 'assets/imgs',
+        cwd: 'assets/images',
         src: '**',
-        dest: 'public/imgs',
+        dest: 'public/images',
       },
       ico: {
         expand: true,
-        cwd: 'assets/imgs/',
+        cwd: 'assets/images/',
         src: '**/*.ico',
-        dest: 'public/imgs'
+        dest: 'public/images'
+      },
+      ie: {
+        expand: true,
+        cwd: 'assets/styles/ie',
+        src: '**/*.htc',
+        dest: 'public/styles/ie'
       }
     },
     // Open Config
@@ -198,15 +201,15 @@ module.exports = function (grunt) {
         },
         files: [{
                 expand: true,
-                cwd: 'assets/html',
+                cwd: 'assets',
                 src: '**/*.html',
-                dest: 'public/html'
+                dest: 'public'
             }]
       }
     },
     // Cleans directories
     clean: {
-      src: ['public/imgs/','public/js/','public/styles/', 'public/html']
+      src: ['public/*']
     }
   });
 
@@ -229,6 +232,6 @@ module.exports = function (grunt) {
     }, 700);
   });
 
-  grunt.registerTask('default', ['develop', 'clean' ,'copy:main' ,'sass', 'open:delayed', 'watch']);
-  grunt.registerTask('build', ['clean','uglify','sass','cssmin','svgmin','imagemin', 'htmlmin' ,'copy:ico']);
+  grunt.registerTask('serve', ['copy:ico','develop', 'clean' ,'copy:main' ,'sass', 'open:delayed', 'watch']);
+  grunt.registerTask('build', ['clean','uglify','sass', 'copy:css','cssmin','svgmin','imagemin', 'htmlmin' ,'copy:ico', 'copy:ie']);
 };

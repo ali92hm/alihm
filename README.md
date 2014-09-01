@@ -1,9 +1,10 @@
-Node/Express static web page
+Ali Hajimirza personal website.
 ========
 
-Requirements
+To run:
 --------
-
-TODO
---------
-* Write documentation
+```bash
+$ npm install
+$ bower install
+$ grunt serve
+```

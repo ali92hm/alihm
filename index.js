@@ -1,5 +1,4 @@
 var express = require('express')
-  , routes = require('./routes')
   , path = require('path')
   , logger = require('morgan')
   , favicon = require('serve-favicon')
@@ -7,14 +6,18 @@ var express = require('express')
   , cookieParser = require('cookie-parser');
 
 var app = express();
-app.set('views', __dirname + '/views');
-app.set('view engine', 'jade');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(favicon(__dirname + '/public/imgs/favicon.ico'));
-routes(app);
+app.use(express.static(path.join(__dirname, 'bower_components')));
+app.use(favicon(__dirname + '/public/images/favicon.ico'));
+app.get('/research', function(req, res, next){
+  res.sendFile(path.join(__dirname, 'public', 'research.html'));
+});
+app.get('*', function(req, res, next){
+  res.status(404).sendFile(path.join(__dirname, 'public', '404.html'));
+});
 
 if (app.get('env') === 'production') {
   module.exports = app;
