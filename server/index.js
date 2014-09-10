@@ -2,6 +2,7 @@ var express = require('express')
   , path = require('path')
   , logger = require('morgan')
   , bodyParser = require('body-parser')
+  , favicon = require('serve-favicon')
   , mongoose = require('mongoose')
   , controller = require('./message.controller')
   , cookieParser = require('cookie-parser');
@@ -16,6 +17,7 @@ mongoose.connect('mongodb://localhost/alihm');
 //Router
 app.use(express.static(path.join(__dirname, '..' ,'public')));
 app.use(express.static(path.join(__dirname, '..' ,'bower_components')));
+app.use(favicon(path.join(__dirname, '..','public','images','favicon.png')));
 app.get('/view/message', controller.index);
 app.post('/message', controller.create);
 app.get('*', function(req, res, next){

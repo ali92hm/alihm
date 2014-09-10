@@ -170,12 +170,6 @@ module.exports = function (grunt) {
         src: '**',
         dest: 'public/images',
       },
-      ico: {
-        expand: true,
-        cwd: 'assets/images/',
-        src: '**/*.ico',
-        dest: 'public/images'
-      },
       ie: {
         expand: true,
         cwd: 'assets/styles/ie',
@@ -232,6 +226,6 @@ module.exports = function (grunt) {
     }, 700);
   });
 
-  grunt.registerTask('serve', ['copy:ico','develop', 'clean' ,'copy:main' ,'sass', 'open:delayed', 'watch']);
-  grunt.registerTask('build', ['clean','uglify','sass', 'copy:css','cssmin','svgmin','imagemin', 'htmlmin' ,'copy:ico', 'copy:ie']);
+  grunt.registerTask('serve', ['clean','sass','copy:main','develop','open:delayed','watch']);
+  grunt.registerTask('build', ['clean','uglify','sass','copy:css','cssmin','svgmin','imagemin','htmlmin','copy:ie']);
 };
