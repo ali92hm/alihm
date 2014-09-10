@@ -1,22 +1,25 @@
 var express = require('express')
   , path = require('path')
   , logger = require('morgan')
-  , favicon = require('serve-favicon')
   , bodyParser = require('body-parser')
+  , mongoose = require('mongoose')
+  , controller = require('./message.controller')
   , cookieParser = require('cookie-parser');
 
 var app = express();
 app.use(logger('dev'));
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'bower_components')));
-app.use(favicon(__dirname + '/public/images/favicon.ico'));
-app.get('/research', function(req, res, next){
-  res.sendFile(path.join(__dirname, 'public', 'research.html'));
-});
+mongoose.connect('mongodb://localhost/alihm');
+
+//Router
+app.use(express.static(path.join(__dirname, '..' ,'public')));
+app.use(express.static(path.join(__dirname, '..' ,'bower_components')));
+app.get('/view/message', controller.index);
+app.post('/message', controller.create);
 app.get('*', function(req, res, next){
-  res.status(404).sendFile(path.join(__dirname, 'public', '404.html'));
+  res.status(404).sendFile(path.join(__dirname, '..' ,'public', '404.html'));
 });
 
 if (app.get('env') === 'production') {
