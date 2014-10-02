@@ -8,15 +8,13 @@ var express = require('express')
 var app = express();
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
-
 
 //Router
 app.use(express.static(path.join(__dirname, '..' ,'public')));
 app.use(express.static(path.join(__dirname, '..' ,'bower_components')));
 app.use(favicon(path.join(__dirname, '..','public','images','favicon.png')));
-
 
 if (app.get('env') === 'production') {
   var mongoose = require('mongoose');

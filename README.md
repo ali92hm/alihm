@@ -8,3 +8,7 @@ $ npm install
 $ bower install
 $ grunt serve
 ```
+
+To do:
+--------
+Switch to mail chimp
