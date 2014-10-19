@@ -17,11 +17,11 @@ app.use(express.static(path.join(__dirname, '..' ,'bower_components')));
 app.use(favicon(path.join(__dirname, '..','public','images','favicon.png')));
 
 if (app.get('env') === 'production') {
-  var mongoose = require('mongoose');
-  var controller = require('./message.controller');
-  mongoose.connect('mongodb://localhost/alihm');
-  app.get('/view/message', controller.index);
-  app.post('/message', controller.create);
+  // var mongoose = require('mongoose');
+  // var controller = require('./message.controller');
+  // mongoose.connect('mongodb://localhost/alihm');
+  // app.get('/view/message', controller.index);
+  // app.post('/message', controller.create);
   module.exports = app;
 } else {
   app.set('port', process.env.PORT || 3000);
