@@ -11,4 +11,4 @@ $ grunt serve
 
 To do:
 --------
-Switch to mail chimp
+Switch to madrill
