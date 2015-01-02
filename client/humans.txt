@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+This is the landing page for Siren Technologies. It has a description about the product, form for emails and subscription to the beta version.
+
+# TEAM
+
+	Ryan Phillips -- CEO
+    Ali Hajimirza -- CTO
+    Nikhil Mutalik -- Senior Dev
+
+# THANKS
+
+    @n33cos larsonjj
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, html5up.net
+    Normalize.css, jQuery, Modernizr

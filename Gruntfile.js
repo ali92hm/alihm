@@ -1,231 +1,81 @@
+// Generated on 2014-12-30 using generator-yeogurt 0.12.3
 'use strict';
 
-var request = require('request');
+// Folder paths for:
+// - dev (location for development source files)
+// - server (location for files created when running 'grunt serve')
+// - dist (location for files created when running 'grunt' or 'grunt build')
+var config = {
+    client: 'client',
+    staticServer: 'client/.serve',
+    dist: 'dist',
+    server: 'server'
+};
 
-module.exports = function (grunt) {
-  require('load-grunt-tasks')(grunt);
+module.exports = function(grunt) {
 
-  var reloadPort = 35729,
-    files;
+    // setup configuration object
+    grunt.config.set('yeogurt', config);
 
-  grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
-    develop: {
-      server: {
-        file: 'server/index.js'
-      }
-    },
-    watch: {
-      options: {
-        nospawn: true,
-      },
-      sass: {
-        files: ['assets/styles/**/*.sass', 'assets/styles/**/*.scss'],
-        tasks: ['sass'],
-        options: {
-          livereload: reloadPort
-        }
-      },
-      js: {
-        files: [
-          'server/**/*.js'
-        ],
-        tasks: ['develop', 'delayed-livereload']
-      },
-      client: {
-        files: [
-          'assets/js/**/*.js'
-        ],
-        tasks: ['copy:js'],
-        options: {
-          livereload: reloadPort
-        }
-      },
-      html: {
-        files: [
-          'assets/**/*.html'
-        ],
-        tasks: ['copy:html'],
-        options: {
-          livereload: reloadPort
-        }
-      },
-      images: {
-        files: [
-          'assets/images/**'
-        ],
-        tasks: ['copy:images'],
-        options: {
-          livereload: reloadPort
-        }
-      },
-      css: {
-        files: [
-          'assets/styles/**/*.css'
-        ],
-        tasks: ['copy:css'],
-        options: {
-          livereload: reloadPort
-        }
-      }
-    },
-    // Hint Config
-    jshint: {
-      options: {
-        jshintrc: '.jshintrc'
-      },
-      all: [
-        'Gruntfile.js',
-        'index.js',
-        'assets/js/**/*.js'   
-      ]
-    },
-    // uglify javascript
-    uglify: {
-      my_target: {
-        files: [{
-          expand: true,
-          cwd: 'assets/js',
-          src: '**/*.js',
-          dest: 'public/js'
-        }]
-      }
-    },
-    // Sass Config
-    sass: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: 'assets/styles',
-          src: ['**/*.sass', '**/*.scss'],
-          dest: 'public/styles',
-          ext: '.css'
-        }],
-        options: {
-          noCache: true,
-        }
-      }
-    },
-    // Imagemin Config
-    imagemin: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: 'assets/images',
-          src: '**/*.{png,jpg,jpeg}',
-          dest: 'public/images'
-        }]
-      }
-    },
-    // SVGmin Config
-    svgmin: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: 'assets/images',
-          src: '{,*/}*.svg',
-          dest: 'public/images'
-        }]
-      }
-    },
-    // Minifies css
-    cssmin: {
-      minify: {
-        expand: true,
-        cwd: 'public/styles/',
-        src: ['**/*.css'],
-        dest: 'public/styles/',
-        ext: '.css'
-      }
-    },
-    // Copy 
-    copy: {
-      main: {
-        expand: true,
-        cwd: 'assets/',
-        src: ['js/**','images/**', 'styles/**/*.css' ,'**/*.html'],
-        dest: 'public/',
-      },
-      html: {
-        expand: true,
-        cwd: 'assets',
-        src: '**/*.html',
-        dest: 'public',
-      },
-      css: {
-        expand: true,
-        cwd: 'assets/styles',
-        src: '**/*.css',
-        dest: 'public/styles',
-      },
-      js: {
-        expand: true,
-        cwd: 'assets/js',
-        src: '**',
-        dest: 'public/js',
-      },
-      images: {
-        expand: true,
-        cwd: 'assets/images',
-        src: '**',
-        dest: 'public/images',
-      },
-      ie: {
-        expand: true,
-        cwd: 'assets/styles/ie',
-        src: '**/*.htc',
-        dest: 'public/styles/ie'
-      }
-    },
-    // Open Config
-    open: {
-      delayed: {
-        path: 'http://localhost:3000',
-        app: 'Google Chrome',
-        options: {
-          delay: 100
-        }
-      }
-    },
-    htmlmin: {                                    
-      dist: {                                      
-        options: {                                 
-          removeComments: true,
-          collapseWhitespace: true
-        },
-        files: [{
-                expand: true,
-                cwd: 'assets',
-                src: '**/*.html',
-                dest: 'public'
-            }]
-      }
-    },
-    // Cleans directories
-    clean: {
-      src: ['public/*']
+    // show elapsed time at the end
+    require('time-grunt')(grunt);
+
+    // Load all grunt tasks with JIT (Makes task loading super fast!)
+    require('jit-grunt')(grunt, {
+        // translate useminPrepare to use the 'grunt-usemin' plugin
+        useminPrepare: 'grunt-usemin',
+        // translate swig to use the 'grunt-wobble-swig' plugin
+        swig: 'grunt-swig-templates'
+    });
+
+    // Load the include-all library in order to require all of our grunt
+    // configurations and task registrations dynamically.
+    var includeAll = require('include-all');
+
+    /**
+     * Loads Grunt configuration modules from the specified
+     * relative path. These modules should export a function
+     * that, when run, should either load/configure or register
+     * a Grunt task.
+     */
+    function loadTasks(relPath) {
+        return includeAll({
+            dirname: require('path').resolve(__dirname, relPath),
+            filter: /(.+)\.js$/
+        }) || {};
     }
-  });
 
-  grunt.config.requires('watch.js.files');
-  files = grunt.config('watch.js.files');
-  files = grunt.file.expand(files);
+    /**
+     * Invokes the function from a Grunt configuration module with
+     * a single argument - the `grunt` object.
+     */
+    function invokeConfigFn(tasks) {
+        for (var taskName in tasks) {
+            if (tasks.hasOwnProperty(taskName)) {
+                tasks[taskName](grunt);
+            }
+        }
+    }
 
-  // Live reload
-  grunt.registerTask('delayed-livereload', 'Live reload after the node server has restarted.', function () {
-    var done = this.async();
-    setTimeout(function () {
-      request.get('http://localhost:' + reloadPort + '/changed?files=' + files.join(','), function (err, res) {
-        var reloaded = !err && res.statusCode === 200;
-        if (reloaded)
-          grunt.log.ok('Delayed live reload successful.');
-        else
-          grunt.log.error('Unable to make a delayed live reload.');
-        done(reloaded);
-      });
-    }, 700);
-  });
+    // Load task functions
+    var utilConfig = loadTasks('./grunt/config/util');
+    var optimizeConfig = loadTasks('./grunt/config/optimize');
+    var serverConfig = loadTasks('./grunt/config/server');
+    var registerDefinitions = loadTasks('./grunt/tasks');
 
-  grunt.registerTask('serve', ['clean','sass','copy:main','develop','open:delayed','watch']);
-  grunt.registerTask('build', ['clean','uglify','sass','copy:css','cssmin','svgmin','imagemin','htmlmin','copy:ie']);
+    // (ensure that a default task exists)
+    if (!registerDefinitions.
+        default) {
+        registerDefinitions.
+        default = function(grunt) {
+            grunt.registerTask('default', []);
+        };
+    }
+
+    // Run task functions to configure Grunt.
+    invokeConfigFn(utilConfig);
+    invokeConfigFn(optimizeConfig);
+    invokeConfigFn(serverConfig);
+    invokeConfigFn(registerDefinitions);
+
 };
