@@ -79,7 +79,6 @@ grunt build
 	│       ├── serve.js
 	│       ├── zip.js
 	│       └── test.js
-	├── templates                   - Templates of HTML files that should not be served
 	└── node_modules                - Contains bower modules
 
 ##Potential Bugs:
@@ -93,7 +92,7 @@ Not known.
 * Add education page
 * Add projects page
 * Fix links
-* sending messages
+* Switch to madrill
 
 ##License
 [Creative Commons license](http://creativecommons.org/licenses/by/4.0/)
