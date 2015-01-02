@@ -1,4 +1,4 @@
-#Siren Landing Page
+#AliHM
 This the personal website of Ali Hajimirza.
 
 ##Usage
