@@ -5,7 +5,7 @@ This is the landing page for Siren Technologies. It has a description about the 
 ###Install
 To use this script clone this repository on your remote server.
 ```bash
-git clone https://github.com/A92hm/alihm
+git clone https://github.com/A92hm/alihm.git && cd alihm
 npm install
 bower install
 ```
