@@ -956,7 +956,39 @@
 				border-right: solid 0.75em transparent;
 				border-top: solid 0.6em #282828;
 			}
-			
+
+/*********************************************************************************/
+/* notification                                                                      */
+/*********************************************************************************/
+	.notification {
+	  display: none;
+	  background: #fff;
+	  border-radius: 6px;
+	  margin-top: 20px;
+	  height: 40px;
+	  line-height: 40px; 
+	}
+	.notification.success span, .notification.success strong {
+		color: #4F8A10; 
+	}
+	.notification.success.filled {
+		background-color: #DFF2BF; 
+	}
+
+	.notification.error span, .notification.error strong {
+		color: #e89980;
+	}
+	.notification.error.filled {
+		background-color: #f5d6cc;
+	}
+	.notification .close {
+		color: #e89980;
+		margin-top: 5px;
+		margin-right: 5px;
+		float: right;
+		font-size: 11px;
+		border-bottom: none; 
+	}		
 /*********************************************************************************/
 /* Articles                                                                      */
 /*********************************************************************************/

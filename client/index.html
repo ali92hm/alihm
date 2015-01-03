@@ -37,6 +37,7 @@
 
         <!-- build:js(client) scripts/global.js -->
         <script src="/bower_components/jquery/dist/jquery.js"></script>
+        <script src="/bower_components/mandrill-api/mandrill.min.js"></script>
         <script src="/bower_components/skel/dist/skel.min.js"></script>
         <!-- endbuild -->
 
@@ -220,30 +221,43 @@
                         </header>
                         <div class="row">
                             <div class="12u">
-                                <form method="post" action="/message">
+                                <form id="contact_us">
+                                    <div class="12u">
+                                        <ul class="actions align-center">
+                                            <div class="notification success filled">
+                                                <span><strong>Success!</strong> Your message was sent.</span><a href="#" class="close fa fa-times"></a>
+                                            </div>
+
+                                            <div class="notification error filled">
+                                                <span><strong>Something is wrong!</strong> Please double check your email address.</span><a href="#" class="close fa fa-times"></a>
+                                            </div>
+                                        </ul>
+                                    </div>
                                     <div>
-                                        <div class="row half">
+                                        <div class="row">
                                             <div class="6u">
                                                 <input type="text" name="name" id="name" placeholder="Name" />
                                             </div>
                                             <div class="6u">
-                                                <input type="text" name="email" id="email" placeholder="Email" />
-                                            </div>
-                                        </div>
-                                        <div class="row half">
-                                            <div class="12u">
-                                                <input type="text" name="subject" id="subject" placeholder="Subject" />
-                                            </div>
-                                        </div>
-                                        <div class="row half">
-                                            <div class="12u">
-                                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                                                <input type="text" name="email" id="email" placeholder="Email"required />
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="12u">
-                                                <a href="#" class="button form-button-submit">Send Message</a>
-                                                <a href="#" class="button button-alt form-button-reset">Clear Form</a>
+                                                <input type="text" name="subject" id="subject" placeholder="Subject"required />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="12u">
+                                                <textarea name="message" id="message" placeholder="Message"required></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row 200%">
+                                            <div class="12u">
+                                                <ul class="actions">
+                                                    <li><input type="submit" value="Send Message" /></li>
+                                                    <li><input type="reset" value="Clear Form" class="alt" /></li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -268,7 +282,7 @@
                     <footer>
                         <ul id="copyright">
                             <li>&copy; 2014 Ali Hajimirza</li>
-                            <li>Last modified: Sep 2014</li>
+                            <li>Last modified: Jan 2015</li>
                             <li>Original Design: <a href="http://html5up.net/">HTML5 UP</a></li>
                         </ul>
                     </footer>

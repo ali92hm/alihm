@@ -86,12 +86,12 @@ grunt build
 Not known. 
 
 ##To do
+* Fix CSS
 * Add content.
 * Add research page
 * Add education page
 * Add projects page
 * Fix links
-* Switch to madrill
 
 ##License
 [Creative Commons license](http://creativecommons.org/licenses/by/4.0/)
