@@ -5,7 +5,7 @@ This the personal website of Ali Hajimirza.
 ###Install
 To use this script clone this repository on your remote server.
 ```bash
-git clone https://github.com/A92hm/alihm.git
+git clone https://github.com/A92hm/alihm.git && cd alihm
 npm install
 bower install
 ```
