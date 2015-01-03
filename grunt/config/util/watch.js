@@ -32,13 +32,12 @@ var taskConfig = function(grunt) {
                 'clean:temp'
             ]
         },
-        injectCss: {
+        css: {
             files: [
                 '<%= yeogurt.client %>/styles/**/*.css'
             ],
             tasks: [
-                'injector:css',
-                'autoprefixer:server'
+                'copy:css'
             ]
         },
         injectJs: {

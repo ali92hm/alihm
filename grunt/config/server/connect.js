@@ -7,19 +7,19 @@ var taskConfig = function(grunt) {
 
     grunt.config.set('connect', {
         options: {
-            port: 9010,
+            port: 9000,
             livereload: 35729,
-            hostname: '127.0.0.1'
+            hostname: 'localhost'
         },
         server: {
             options: {
-                open: 'http://127.0.0.1:9010/',
+                open: 'http://localhost:9000/',
                 base: '<%= yeogurt.client %>/.serve'
             }
         },
         dist: {
             options: {
-                open: 'http://127.0.0.1:9010/',
+                open: 'http://localhost:9000/',
                 base: '<%= yeogurt.dist %>',
                 livereload: false
             }

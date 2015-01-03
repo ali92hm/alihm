@@ -86,7 +86,6 @@ grunt build
 Not known. 
 
 ##To do
-* Grunt build config `urgent`
 * Add content.
 * Add research page
 * Add education page

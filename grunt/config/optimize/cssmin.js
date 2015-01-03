@@ -15,7 +15,7 @@ var taskConfig = function(grunt) {
       		cwd: '<%= yeogurt.client %>/styles',
       		src: ['*.css', '!*.min.css'],
       		dest: '<%= yeogurt.dist %>/styles',
-      		ext: '.min.css'
+      		ext: '.css'
     		}]
   		}
     });
