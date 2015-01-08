@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/A92hm/alihm.svg)](https://travis-ci.org/A92hm/alihm)
 #AliHM
 This the personal website of Ali Hajimirza.
 
