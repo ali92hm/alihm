@@ -8,6 +8,7 @@ var taskConfig = function(grunt) {
 
         grunt.task.run([
             'jshint:test',
+            'sass:dist'
         ]);
     });
 };

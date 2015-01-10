@@ -1,6 +1,6 @@
 {
     "name": "alihm",
-    "version": "2.0.1",
+    "version": "3.0.1",
     "dependencies": {
     },
     "devDependencies": {
@@ -19,6 +19,7 @@
         "grunt-contrib-jshint": "0.10.0",
         "jshint-stylish": "~1.0.0",
         "grunt-contrib-copy": "~0.6.0",
+        "grunt-sass": "~0.17.0",
         "grunt-contrib-uglify": "~0.6.0",
         "grunt-open": "0.2.3",
         "grunt-svgmin": "0.4.0",
@@ -36,6 +37,7 @@
         "jit-grunt": "~0.8.0"
     },
     "scripts": {
+        "test": "grunt test" 
     },
     "engines": {
         "node": ">=0.10.0"

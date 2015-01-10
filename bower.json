@@ -1,6 +1,6 @@
 {
   "name": "alihm",
-  "version": "2.0.1",
+  "version": "3.0.1",
   "dependencies": {
     "jquery": "~1.11.1",
     "modernizr": "~2.8.1",

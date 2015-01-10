@@ -18,6 +18,7 @@ var taskConfig = function(grunt) {
             'clean:server',
             'injector',
             'copy:server',
+            'sass:server',
             'autoprefixer:server',
             'clean:temp'
         ]);

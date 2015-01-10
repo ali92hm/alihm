@@ -59,6 +59,7 @@ module.exports = function(grunt) {
 
     // Load task functions
     var utilConfig = loadTasks('./grunt/config/util');
+    var compileConfig = loadTasks('./grunt/config/compile');
     var optimizeConfig = loadTasks('./grunt/config/optimize');
     var serverConfig = loadTasks('./grunt/config/server');
     var registerDefinitions = loadTasks('./grunt/tasks');
@@ -74,6 +75,7 @@ module.exports = function(grunt) {
 
     // Run task functions to configure Grunt.
     invokeConfigFn(utilConfig);
+    invokeConfigFn(compileConfig);
     invokeConfigFn(optimizeConfig);
     invokeConfigFn(serverConfig);
     invokeConfigFn(registerDefinitions);

@@ -22,17 +22,6 @@ var taskConfig = function(grunt) {
                 ]
             }]
         },
-        css: {
-            files: [{
-                expand: true,
-                cwd: '<%= yeogurt.client %>/',
-                dest: '<%= yeogurt.staticServer %>/',
-                src: [
-                    'styles/**/*.css',
-                    'styles/fonts/**/*.{woff,otf,ttf,eot,svg}'
-                ]
-            }]
-        },
         dist: {
             files: [{
                 expand: true,
