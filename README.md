@@ -1,4 +1,4 @@
-#AliHM [![Build Status](https://travis-ci.org/A92hm/alihm.svg)](https://travis-ci.org/A92hm/alihm) [![Coverage Status](https://coveralls.io/repos/A92hm/alihm/badge.png)](https://coveralls.io/r/A92hm/alihm)
+#AliHM [![Build Status](https://travis-ci.org/A92hm/alihm.svg)](https://travis-ci.org/A92hm/alihm) [![Coverage Status](https://coveralls.io/repos/A92hm/alihm/badge.png)](https://coveralls.io/r/A92hm/alihm) [![Dependency Status](https://david-dm.org/a92hm/alihm.svg)](https://david-dm.org/a92hm/alihm) [![devDependency Status](https://david-dm.org/a92hm/alihm/dev-status.svg)](https://david-dm.org/a92hm/alihm#info=devDependencies)
 This the personal website of Ali Hajimirza.
 
 ##Usage
