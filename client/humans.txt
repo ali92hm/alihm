@@ -1,12 +1,9 @@
 # humanstxt.org/
 # The humans responsible & technology colophon
-This is the landing page for Siren Technologies. It has a description about the product, form for emails and subscription to the beta version.
+This the personal website of Ali Hajimirza.
 
 # TEAM
-
-	Ryan Phillips -- CEO
-    Ali Hajimirza -- CTO
-    Nikhil Mutalik -- Senior Dev
+    Ali Hajimirza
 
 # THANKS
 
