@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.org/A92hm/alihm.svg)](https://travis-ci.org/A92hm/alihm)
-#AliHM
+#AliHM [![Build Status](https://travis-ci.org/A92hm/alihm.svg)](https://travis-ci.org/A92hm/alihm) [![Coverage Status](https://coveralls.io/repos/A92hm/alihm/badge.png)](https://coveralls.io/r/A92hm/alihm)
 This the personal website of Ali Hajimirza.
 
 ##Usage
