@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="ie8 no-js" lang="en"><![endif]-->
-<!--[if IE 9]><html lang="en" class="ie9 no-js"><![endif]-->
-<!--[if !IE]><!-->
-<html class="no-js" lang="en">
-    <!--<![endif]-->
+<html>
     <head>
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
@@ -15,15 +11,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="//www.google-analytics.com" rel="dns-prefetch">
 
-        <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
-
         <noscript>
-            <link rel="stylesheet" href="/styles/skel-noscript.css" />
+            <link rel="stylesheet" href="/styles/skel.css" />
             <link rel="stylesheet" href="/styles/style.css" />
-            <link rel="stylesheet" href="/styles/style-desktop.css" />
+            <link rel="stylesheet" href="/styles/style-wide.css" />
         </noscript>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -33,22 +26,23 @@
             ga('create','UA-54262678-1');ga('send','pageview');
         </script>
 
-
         <!-- build:js(client) scripts/global.js -->
         <script src="/bower_components/jquery/dist/jquery.js"></script>
         <script src="/bower_components/mandrill-api/mandrill.min.js"></script>
+        <script src="bower_components/jquery.dropotron/jquery.dropotron.min.js"></script>
         <script src="/bower_components/skel/dist/skel.min.js"></script>
         <!-- endbuild -->
 
         <!-- build:js(client) scripts/app.js -->
             <!-- [injector:js] -->
-            <script src="scripts/vendor/ie7.js"></script>
+            <script src="scripts/vendor/ie10.js"></script>
             <script src="scripts/vendor/jquery.scrolly.min.js"></script>
+            <script src="scripts/vendor/skel-layers.min.js"></script>
             <!-- [endinjector] -->
         <script src="/scripts/app.js"></script>
         <!-- endbuild -->
 
-
+        <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
         <script src="/bower_components/html5shiv/dist/html5shiv-printshiv.js"></script>
@@ -79,214 +73,218 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Nav -->
-            <nav id="nav">
-                <ul class="container">
-                    <li><a href="#top">Top</a></li>
-                    <li><a href="#work">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+        <!-- Header -->
+        <div id="header">
+                    
+            <!-- Logo -->
+                <h1><a href="index.html" id="logo">Arcana <em>by HTML5 UP</em></a></h1>
+            
+            <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li class="current"><a href="index.html">Home</a></li>
+                        <li>
+                            <a href="">Dropdown</a>
+                            <ul>
+                                <li><a href="#">Lorem dolor</a></li>
+                                <li><a href="#">Magna phasellus</a></li>
+                                <li><a href="#">Etiam sed tempus</a></li>
+                                <li>
+                                    <a href="">Submenu</a>
+                                    <ul>
+                                        <li><a href="#">Lorem dolor</a></li>
+                                        <li><a href="#">Phasellus magna</a></li>
+                                        <li><a href="#">Magna phasellus</a></li>
+                                        <li><a href="#">Etiam nisl</a></li>
+                                        <li><a href="#">Veroeros feugiat</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Veroeros feugiat</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="left-sidebar.html">Left Sidebar</a></li>
+                        <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                        <li><a href="two-sidebar.html">Two Sidebar</a></li>
+                        <li><a href="no-sidebar.html">No Sidebar</a></li>
+                    </ul>
+                </nav>
 
-        <!-- Home -->
-            <div class="wrapper wrapper-style1 wrapper-first">
-                <article class="container" id="top">
-                    <div class="row">
-                        <div class="4u">
-                            <span class="me image image-full"><img src="/images/me.jpg" alt="" /></span>
+        </div>
+            
+        <!-- Banner -->
+        <section id="banner">
+            <header>
+                <h2>Arcana: <em>A responsive site template freebie by <a href="http://html5up.net">HTML5 UP</a></em></h2>
+                <a href="#" class="button">Learn More</a>
+            </header>
+        </section>
+
+        <!-- Highlights -->
+        <section class="wrapper style1">
+            <div class="container">
+                <div class="row 200%">
+                    <section class="4u 12u(2)">
+                        <div class="box highlight">
+                            <i class="icon major fa-paper-plane"></i>
+                            <h3>This Is Important</h3>
+                            <p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
                         </div>
-                        <div class="8u">
-                            <header>
-                                <h1>Hi, I'm <strong>Ali Hajimirza</strong></h1>
-                            </header>
-                            <p>This is my personal website. It is still under development and links may be broken.</p>
-                            <a href="#work" class="button button-big">About me</a>
+                    </section>
+                    <section class="4u 12u(2)">
+                        <div class="box highlight">
+                            <i class="icon major fa-pencil"></i>
+                            <h3>Also Important</h3>
+                            <p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
                         </div>
-                    </div>
-                </article>
+                    </section>
+                    <section class="4u 12u(2)">
+                        <div class="box highlight">
+                            <i class="icon major fa-wrench"></i>
+                            <h3>Probably Important</h3>
+                            <p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+                        </div>
+                    </section>
+                </div>
             </div>
+        </section>
 
-        <!-- Work -->
-            <div class="wrapper wrapper-style2">
-                <article id="work">
-                    <header>
-                        <h2>Learn more about my education, publications, and development.</h2>
-                        <span>I'm graduating in May 2015 from University of Oklahoma and going to pursue a Ph.D in computer science.</span>
-                    </header>
-                    <div class="container">
-                        <div class="row">
-                            <div class="4u">
-                                <section class="box box-style1">
-                                    <span class="fa featured fa-mortar-board"></span>
-                                    <h3>Education</h3>
-                                    <p>I'm a senior at the University of Oklahoma studying Computer Science and Math.</p>
-                                </section>
-                            </div>
-                            <div class="4u">
-                                <section class="box box-style1">
-                                    <span class="fa featured fa-file-o"></span>
-                                    <h3>Publications</h3>
-                                    <p>I've done research in Artificial Intelligence, parallel computing, and graph theory.</p>
-                                </section>
-                            </div>
-                            <div class="4u">
-                                <section class="box box-style1">
-                                    <span class="fa featured fa-code"></span>
-                                    <h3>Development</h3>
-                                    <p>I have a passion for clean design and beautifully engineered systems. </p>
-                                </section>
-                            </div>
-                        </div>
-
-                    </div>
-                    <footer>
-                        <p> Download my <strong> <a href='https://s3.amazonaws.com/AliHM/resume.pdf'> Resume </a> </strong> or <strong> <a href="/404.html"> Curriculum Vitae </a> </strong> </p>
-                        <a href="#portfolio" class="button button-big">See some of my projects.</a>
-                    </footer>
-                </article>
+        <!-- Gigantic Heading -->
+        <section class="wrapper style2">
+            <div class="container">
+                <header class="major">
+                    <h2>A gigantic heading you can use for whatever</h2>
+                    <p>With a much smaller subtitle hanging out just below it</p>
+                </header>
             </div>
+        </section>
 
-        <!-- Portfolio -->
-            <div class="wrapper wrapper-style3">
-                <article id="portfolio">
-                    <header>
-                        <h2>These are some of my extracurricular activities in college.</h2>
-                        <span>I've co-founded two companies so far and working on one of them as the CTO.</span>
-                    </header>
-                    <div class="container">
-                        <div class="row">
-                            <div class="12u">
+        <!-- Posts -->
+        <section class="wrapper style1">
+            <div class="container">
+                <div class="row">
+                    <section class="6u 12u(2)">
+                        <div class="box post">
+                            <a href="#" class="image left"><img src="images/pic01.jpg" alt="" /></a>
+                            <div class="inner">
+                                <h3>The First Thing</h3>
+                                <p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="4u">
-                                <article class="box box-style2">
-                                    <a href="http://sirenweather.com" class="image image-full"><img src="/images/siren.png" alt="" /></a>
-                                    <h3><a href="http://sirenweather.com">Siren</a></h3>
-                                    <p>I'm one of the co-founders and CTO of Siren, </p>
-                                </article>
-                            </div>
-                            <div class="4u">
-                                <article class="box box-style2">
-                                    <a href="http://getparkave.com" class="image image-full"><img src="" alt="" /></a>
-                                    <h3><a href="http://getparkave.com">ParkAve</a></h3>
-                                    <p>I was the development team lead and co-founder of ParkAve LLC.</p>
-                                </article>
-                            </div>
-                            <div class="4u">
-                                <article class="box box-style2">
-                                    <a class="image image-full"><img src="" alt="" /></a>
-                                    <h3><a >Research</a></h3>
-                                    <p>I'm currently doing research on Evolution in Nurturing Robotics.</p>
-                                </article>
+                    </section>
+                    <section class="6u 12u(2)">
+                        <div class="box post">
+                            <a href="#" class="image left"><img src="images/pic02.jpg" alt="" /></a>
+                            <div class="inner">
+                                <h3>The Second Thing</h3>
+                                <p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="4u">
-                                <article class="box box-style2">
-                                    <a class="image image-full"><img src="" alt="" /></a>
-                                    <h3><a >Robotics</a></h3>
-                                    <p>I've participated in multiple robotics competitions such as FISRT and KIPR.</p>
-                                </article>
-                            </div>
-                            <div class="4u">
-                                <article class="box box-style2">
-                                    <a  class="image image-full"><img src="" alt="" /></a>
-                                    <h3><a >Tutoring</a></h3>
-                                    <p>I've a lot of experience with tutoring, TAing, and mentoring other students.</p>
-                                </article>
-                            </div>
-                            <div class="4u">
-                                <article class="box box-style2">
-                                    <a class="image image-full"><img src="" alt="" /></a>
-                                    <h3><a >Other projects</a></h3>
-                                    <p>I've worked on a lot more projects. You can get a glimpse of them here.</p>
-                                </article>
+                    </section>
+                </div>
+                <div class="row">
+                    <section class="6u 12u(2)">
+                        <div class="box post">
+                            <a href="#" class="image left"><img src="images/pic03.jpg" alt="" /></a>
+                            <div class="inner">
+                                <h3>The Third Thing</h3>
+                                <p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
                             </div>
                         </div>
-                    </div>
-                    <footer>
-                        <a href="#contact" class="button button-big">Get in touch with me</a>
-                    </footer>
-                </article>
+                    </section>
+                    <section class="6u 12u(2)">
+                        <div class="box post">
+                            <a href="#" class="image left"><img src="images/pic04.jpg" alt="" /></a>
+                            <div class="inner">
+                                <h3>The Fourth Thing</h3>
+                                <p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
+        </section>
 
-        <!-- Contact -->
-            <div class="wrapper wrapper-style4">
-                <article id="contact" class="container small">
-                    <div>
-                        <header>
-                            <h2>Feel free to send me a message!</h2>
-                        </header>
-                        <div class="row">
-                            <div class="12u">
-                                <form id="contact_us">
-                                    <div class="12u">
-                                        <ul class="actions align-center">
-                                            <div class="notification success filled">
-                                                <span><strong>Success!</strong> Your message was sent.</span><a href="#" class="close fa fa-times"></a>
-                                            </div>
+        <!-- CTA -->
+        <section id="cta" class="wrapper style3">
+            <div class="container">
+                <header>
+                    <h2>Are you ready to continue your quest?</h2>
+                    <a href="#" class="button">Insert Coin</a>
+                </header>
+            </div>
+        </section>
 
-                                            <div class="notification error filled">
-                                                <span><strong>Something is wrong!</strong> Please double check your email address.</span><a href="#" class="close fa fa-times"></a>
-                                            </div>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <div class="row">
-                                            <div class="6u">
-                                                <input type="text" name="name" id="name" placeholder="Name" />
-                                            </div>
-                                            <div class="6u">
-                                                <input type="text" name="email" id="email" placeholder="Email"required />
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="12u">
-                                                <input type="text" name="subject" id="subject" placeholder="Subject"required />
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="12u">
-                                                <textarea name="message" id="message" placeholder="Message"required></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="row 200%">
-                                            <div class="12u">
-                                                <ul class="actions">
-                                                    <li><input type="submit" value="Send Message" /></li>
-                                                    <li><input type="reset" value="Clear Form" class="alt" /></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="12u">
-                                <hr />
-                                <h3>Find me on ...</h3>
-                                <ul class="social">
-                                    <li class="twitter"><a href="http://twitter.com/ali92hm" class="fa fa-twitter"><span>Twitter</span></a></li>
-                                    <li class="facebook"><a href="https://www.facebook.com/ali.hajimirza" class="fa fa-facebook"><span>Facebook</span></a></li>
-                                    <li class="linkedin"><a href="https://www.linkedin.com/pub/ali-hajimirza/99/3a8/140" class="fa fa-linkedin"><span>LinkedIn</span></a></li>
-                                    <li class="googleplus"><a href="https://plus.google.com/u/0/+AliHajimirza" class="fa fa-google-plus"><span>Google+</span></a></li>
-                                    <li class="github"><a href="http://github.com/A92hm" class="fa fa-github"><span>Github</span></a></li>
-                                </ul>
-                                <hr />
-                            </div>
-                        </div>
-                    </div>
-                    <footer>
-                        <ul id="copyright">
-                            <li>&copy; 2014 Ali Hajimirza</li>
-                            <li>Last modified: Jan 2015</li>
-                            <li>Original Design: <a href="http://html5up.net/">HTML5 UP</a></li>
+        <!-- Footer -->
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <section class="3u 6u(2) 12u$(3)">
+                        <h3>Links to Stuff</h3>
+                        <ul class="links">
+                            <li><a href="#">Mattis et quis rutrum</a></li>
+                            <li><a href="#">Suspendisse amet varius</a></li>
+                            <li><a href="#">Sed et dapibus quis</a></li>
+                            <li><a href="#">Rutrum accumsan dolor</a></li>
+                            <li><a href="#">Mattis rutrum accumsan</a></li>
+                            <li><a href="#">Suspendisse varius nibh</a></li>
+                            <li><a href="#">Sed et dapibus mattis</a></li>
                         </ul>
-                    </footer>
-                </article>
+                    </section>
+                    <section class="3u 6u$(2) 12u$(3)">
+                        <h3>More Links to Stuff</h3>
+                        <ul class="links">
+                            <li><a href="#">Duis neque nisi dapibus</a></li>
+                            <li><a href="#">Sed et dapibus quis</a></li>
+                            <li><a href="#">Rutrum accumsan sed</a></li>
+                            <li><a href="#">Mattis et sed accumsan</a></li>
+                            <li><a href="#">Duis neque nisi sed</a></li>
+                            <li><a href="#">Sed et dapibus quis</a></li>
+                            <li><a href="#">Rutrum amet varius</a></li>
+                        </ul>
+                    </section>
+                    <section class="6u 12u(2)">
+                        <h3>Get In Touch</h3>
+                        <form>
+                            <div class="row 50%">
+                                <div class="6u 12u(3)">
+                                    <input type="text" name="name" id="name" placeholder="Name" />
+                                </div>
+                                <div class="6u 12u(3)">
+                                    <input type="email" name="email" id="email" placeholder="Email" />
+                                </div>
+                            </div>
+                            <div class="row 50%">
+                                <div class="12u">
+                                    <textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="row 50%">
+                                <div class="12u">
+                                    <ul class="actions">
+                                        <li><input type="submit" class="button alt" value="Send Message" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
             </div>
+
+            <!-- Icons -->
+            <ul class="icons">
+                <li><a href="http://twitter.com/ali92hm" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.facebook.com/ali.hajimirza" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="http://github.com/A92hm" class="icon fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="https://www.linkedin.com/pub/ali-hajimirza/99/3a8/140" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://plus.google.com/u/0/+AliHajimirza" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+            </ul>
+
+            <!-- Copyright -->
+            <div class="copyright">
+                <ul class="menu">
+                    <li>&copy; Ali Hajimirza. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>
