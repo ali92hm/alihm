@@ -4,11 +4,11 @@
 'use strict';
 
 var taskConfig = function(grunt) {
-    grunt.registerTask('test', 'Peform tests on JavaScript', function(target) {
+    grunt.registerTask('test', 'Perform tests on JavaScript', function(target) {
 
         grunt.task.run([
             'jshint:test',
-            'sass:dist'
+            'build'
         ]);
     });
 };
