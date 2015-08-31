@@ -1,5 +1,5 @@
-#AliHM [![Build Status](https://travis-ci.org/A92hm/alihm.svg)](https://travis-ci.org/A92hm/alihm) [![Coverage Status](https://coveralls.io/repos/A92hm/alihm/badge.png)](https://coveralls.io/r/A92hm/alihm) [![Dependency Status](https://david-dm.org/a92hm/alihm.svg)](https://david-dm.org/a92hm/alihm) [![devDependency Status](https://david-dm.org/a92hm/alihm/dev-status.svg)](https://david-dm.org/a92hm/alihm#info=devDependencies)
-This the personal website of Ali Hajimirza.
+#AliHM [![Build Status](https://travis-ci.org/A92hm/alihm.svg)](https://travis-ci.org/A92hm/alihm) [![Dependency Status](https://david-dm.org/a92hm/alihm.svg)](https://david-dm.org/a92hm/alihm) [![devDependency Status](https://david-dm.org/a92hm/alihm/dev-status.svg)](https://david-dm.org/a92hm/alihm#info=devDependencies)
+This the personal website of [Ali Hajimirza](www.alihm.net).
 
 ##Usage
 ###Install
@@ -83,12 +83,7 @@ grunt build
 ##[Potential Bugs](https://github.com/A92hm/alihm/issues)
 
 ##To do
-* Fix CSS
-* Add content.
-* Add research page
-* Add education page
-* Add projects page
-* Fix links
+* Transition to a template with more content pages.
 
 ##License
 [Creative Commons license](http://creativecommons.org/licenses/by/4.0/)

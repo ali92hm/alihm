@@ -1,22 +1,37 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-        <title>Ali Hajimirza</title>
-        <meta name="description" content="This is Ali Hajimirza's personal website. You can learn about my startups, research interest, education, and projects." />
-        <meta name="keywords" content="Ali,Hajimirza,Ali Hajimirza,Siren,ParkAve,Computer Science,CCEW,entrepreneurship,OU,University of Oklahoma,Research,Development,Robotics" />
-        <meta name="author" content="Ali Hajimirza">
-        <link rel="shortcut icon" type="image/ico" href="/images/favicon.png"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link href="//www.google-analytics.com" rel="dns-prefetch">
+	<head>
+		<title>Ali Hajimirza</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <noscript>
-            <link rel="stylesheet" href="/styles/skel.css" />
-            <link rel="stylesheet" href="/styles/style.css" />
-            <link rel="stylesheet" href="/styles/style-wide.css" />
-        </noscript>
+		<!-- build:js(client) scripts/global.js -->
+        <script src="/bower_components/jquery/dist/jquery.js"></script>
+        <script src="/bower_components/mandrill-api/mandrill.min.js"></script>
+        <!--[if lte IE 8]><script src="/bower_components/html5shiv/dist/html5shiv.min.js"></script><![endif]-->
+        <!--[if lte IE 8]><script src="/scripts/vendor/respond.min.js"></script><![endif]-->
+        <!-- endbuild -->
 
+        <!-- build:js(client) scripts/app.js -->
+            <!-- [injector:js] -->
+            <script src="scripts/vandor/respond.min.js"></script>
+            <!-- [endinjector] -->
+        <script src="scripts/app.js"></script>
+        <!-- endbuild -->
+		
+		
+		<link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="/styles/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="/styles/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="/styles/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="/styles/noscript.css" /></noscript>
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -26,265 +41,77 @@
             ga('create','UA-54262678-1');ga('send','pageview');
         </script>
 
-        <!-- build:js(client) scripts/global.js -->
-        <script src="/bower_components/jquery/dist/jquery.js"></script>
-        <script src="/bower_components/mandrill-api/mandrill.min.js"></script>
-        <script src="bower_components/jquery.dropotron/jquery.dropotron.min.js"></script>
-        <script src="/bower_components/skel/dist/skel.min.js"></script>
-        <!-- endbuild -->
+	</head>
+	<body class="is-loading">
 
-        <!-- build:js(client) scripts/app.js -->
-            <!-- [injector:js] -->
-            <script src="scripts/vendor/ie10.js"></script>
-            <script src="scripts/vendor/jquery.scrolly.min.js"></script>
-            <script src="scripts/vendor/skel-layers.min.js"></script>
-            <!-- [endinjector] -->
-        <script src="/scripts/app.js"></script>
-        <!-- endbuild -->
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-        <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-        <script src="/bower_components/html5shiv/dist/html5shiv-printshiv.js"></script>
-        <script>
-            // Protect window.console method calls, e.g. console is not defined on IE
-            (function() {
-                if (!window.console) {
-                    window.console = {};
-                }
-                // union of Chrome, FF, IE, and Safari console methods
-                var m = [
-                    "log", "info", "warn", "error", "debug", "trace", "dir", "group",
-                    "groupCollapsed", "groupEnd", "time", "timeEnd", "profile", "profileEnd",
-                    "dirxml", "assert", "count", "markTimeline", "timeStamp", "clear"
-                ];
-                // define undefined methods as noops to prevent errors
-                for (var i = 0; i < m.length; i++) {
-                    if (!window.console[m[i]]) {
-                        window.console[m[i]] = function() {};
-                    }
-                }
-            })();
-        </script>
-        <![endif]-->
-    </head>
-    <body>
-        <!--[if lte IE 7]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Header -->
-        <div id="header">
-                    
-            <!-- Logo -->
-                <h1><a href="index.html" id="logo"> I'm redesigning my website. Sorry for the mess</em></a></h1>
-            
-            <!-- Nav -->
-                <nav id="nav">
-                    <ul>
-                        <li class="current"><a href="index.html">Home</a></li>
-                        <li>
-                            <a href="">Dropdown</a>
-                            <ul>
-                                <li><a href="#">Lorem dolor</a></li>
-                                <li><a href="#">Magna phasellus</a></li>
-                                <li><a href="#">Etiam sed tempus</a></li>
-                                <li>
-                                    <a href="">Submenu</a>
-                                    <ul>
-                                        <li><a href="#">Lorem dolor</a></li>
-                                        <li><a href="#">Phasellus magna</a></li>
-                                        <li><a href="#">Magna phasellus</a></li>
-                                        <li><a href="#">Etiam nisl</a></li>
-                                        <li><a href="#">Veroeros feugiat</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Veroeros feugiat</a></li>
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/me.jpg" alt="" /></span>
+							<h1>Ali Hajimirza</h1>
+							<p>Software Engineer</p>
+							<p>I'm redesigning my website, this is temporary.</p>
+						</header>
+                        <hr />
+                        <h2>Drop me a line</h2>
+                        <form id="contact-me">
+                            <div class="field">
+                                <input type="text" name="name" id="name" placeholder="Name" />
+                            </div>
+                            <div class="field">
+                                <input type="text" name="subject" id="subject" placeholder="subject" />
+                            </div>
+                            <div class="field">
+                                <input type="email" name="email" id="email" placeholder="Email" required/>
+                            </div>
+                            <div class="field">
+                                <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+                            </div>
+                            <ul class="actions">
+                                <li><input type="submit" class="button" text="Email"></li>
                             </ul>
-                        </li>
-                        <li><a href="left-sidebar.html">Left Sidebar</a></li>
-                        <li><a href="right-sidebar.html">Right Sidebar</a></li>
-                        <li><a href="two-sidebar.html">Two Sidebar</a></li>
-                        <li><a href="no-sidebar.html">No Sidebar</a></li>
-                    </ul>
-                </nav>
-
-        </div>
-            
-        <!-- Banner -->
-        <section id="banner">
-            <header>
-                <h2>I'm redesigning my website. Sorry for the mess <a href="http://html5up.net">HTML5 UP</a></em></h2>
-                <a href="#" class="button">Learn More</a>
-            </header>
-        </section>
-
-        <!-- Highlights -->
-        <section class="wrapper style1">
-            <div class="container">
-                <div class="row 200%">
-                    <section class="4u 12u(2)">
-                        <div class="box highlight">
-                            <i class="icon major fa-paper-plane"></i>
-                            <h3>This Is Important</h3>
-                            <p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-                        </div>
-                    </section>
-                    <section class="4u 12u(2)">
-                        <div class="box highlight">
-                            <i class="icon major fa-pencil"></i>
-                            <h3>Also Important</h3>
-                            <p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-                        </div>
-                    </section>
-                    <section class="4u 12u(2)">
-                        <div class="box highlight">
-                            <i class="icon major fa-wrench"></i>
-                            <h3>Probably Important</h3>
-                            <p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </section>
-
-        <!-- Gigantic Heading -->
-        <section class="wrapper style2">
-            <div class="container">
-                <header class="major">
-                    <h2>A gigantic heading you can use for whatever</h2>
-                    <p>With a much smaller subtitle hanging out just below it</p>
-                </header>
-            </div>
-        </section>
-
-        <!-- Posts -->
-        <section class="wrapper style1">
-            <div class="container">
-                <div class="row">
-                    <section class="6u 12u(2)">
-                        <div class="box post">
-                            <a href="#" class="image left"><img src="images/pic01.jpg" alt="" /></a>
-                            <div class="inner">
-                                <h3>The First Thing</h3>
-                                <p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+                            <div class="notification success">
+                                <span><strong >Success!</strong> Your message was sent.</span><a href="#" class="close fa fa-times"></a>
                             </div>
-                        </div>
-                    </section>
-                    <section class="6u 12u(2)">
-                        <div class="box post">
-                            <a href="#" class="image left"><img src="images/pic02.jpg" alt="" /></a>
-                            <div class="inner">
-                                <h3>The Second Thing</h3>
-                                <p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="row">
-                    <section class="6u 12u(2)">
-                        <div class="box post">
-                            <a href="#" class="image left"><img src="images/pic03.jpg" alt="" /></a>
-                            <div class="inner">
-                                <h3>The Third Thing</h3>
-                                <p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="6u 12u(2)">
-                        <div class="box post">
-                            <a href="#" class="image left"><img src="images/pic04.jpg" alt="" /></a>
-                            <div class="inner">
-                                <h3>The Fourth Thing</h3>
-                                <p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </section>
 
-        <!-- CTA -->
-        <section id="cta" class="wrapper style3">
-            <div class="container">
-                <header>
-                    <h2>Are you ready to continue your quest?</h2>
-                    <a href="#" class="button">Insert Coin</a>
-                </header>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <div id="footer">
-            <div class="container">
-                <div class="row">
-                    <section class="3u 6u(2) 12u$(3)">
-                        <h3>Links to Stuff</h3>
-                        <ul class="links">
-                            <li><a href="#">Mattis et quis rutrum</a></li>
-                            <li><a href="#">Suspendisse amet varius</a></li>
-                            <li><a href="#">Sed et dapibus quis</a></li>
-                            <li><a href="#">Rutrum accumsan dolor</a></li>
-                            <li><a href="#">Mattis rutrum accumsan</a></li>
-                            <li><a href="#">Suspendisse varius nibh</a></li>
-                            <li><a href="#">Sed et dapibus mattis</a></li>
-                        </ul>
-                    </section>
-                    <section class="3u 6u$(2) 12u$(3)">
-                        <h3>More Links to Stuff</h3>
-                        <ul class="links">
-                            <li><a href="#">Duis neque nisi dapibus</a></li>
-                            <li><a href="#">Sed et dapibus quis</a></li>
-                            <li><a href="#">Rutrum accumsan sed</a></li>
-                            <li><a href="#">Mattis et sed accumsan</a></li>
-                            <li><a href="#">Duis neque nisi sed</a></li>
-                            <li><a href="#">Sed et dapibus quis</a></li>
-                            <li><a href="#">Rutrum amet varius</a></li>
-                        </ul>
-                    </section>
-                    <section class="6u 12u(2)">
-                        <h3>Get In Touch</h3>
-                        <form>
-                            <div class="row 50%">
-                                <div class="6u 12u(3)">
-                                    <input type="text" name="name" id="name" placeholder="Name" />
-                                </div>
-                                <div class="6u 12u(3)">
-                                    <input type="email" name="email" id="email" placeholder="Email" />
-                                </div>
-                            </div>
-                            <div class="row 50%">
-                                <div class="12u">
-                                    <textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
-                                </div>
-                            </div>
-                            <div class="row 50%">
-                                <div class="12u">
-                                    <ul class="actions">
-                                        <li><input type="submit" class="button alt" value="Send Message" /></li>
-                                    </ul>
-                                </div>
+                            <div class="notification error">
+                                <span><strong>Something went wrong!</strong> Try again.</span><a href="#" class="close fa fa-times"></a>
                             </div>
                         </form>
-                    </section>
-                </div>
-            </div>
+                        <hr />
+						<footer>
+                        <h2>In the meantime</h2>  
+                        <p>Here is my resume and other links.</p>
+							<ul class="icons">
+								<li><a href="https://github.com/A92hm" class="fa-github">Github</a></li>
+								<li><a href="https://www.linkedin.com/pub/ali-hajimirza/99/3a8/140" class="fa-linkedin">Linked In</a></li>
+								<li><a href="http://twitter.com/ali92hm" class="fa-twitter">Twitter</a></li>
+                                <li><a href="https://s3-us-west-2.amazonaws.com/alihm.net/ahm-resume.pdf" class="fa-file-pdf-o">Resume</a></li>
+							</ul>
+						</footer>
+					</section>
 
-            <!-- Icons -->
-            <ul class="icons">
-                <li><a href="http://twitter.com/ali92hm" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="https://www.facebook.com/ali.hajimirza" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                <li><a href="http://github.com/A92hm" class="icon fa-github"><span class="label">GitHub</span></a></li>
-                <li><a href="https://www.linkedin.com/pub/ali-hajimirza/99/3a8/140" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                <li><a href="https://plus.google.com/u/0/+AliHajimirza" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
-            </ul>
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Ali Hajimirza</li>
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
 
-            <!-- Copyright -->
-            <div class="copyright">
-                <ul class="menu">
-                    <li>&copy; Ali Hajimirza. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                </ul>
-            </div>
-        </div>
-    </body>
+			</div>
+
+		<!-- Scripts -->
+			
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+
+	</body>
 </html>

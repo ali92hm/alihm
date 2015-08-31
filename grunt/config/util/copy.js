@@ -31,6 +31,7 @@ var taskConfig = function(grunt) {
                     'bower_components/modernizr/modernizr.js',
                     'bower_components/**/*.{woff,otf,ttf,eot,svg}',
                     'bower_components/font-awesome/**/*.min.css',
+                    'styles/**/*.css',
                     '*.html',
                     '!*.js',
                     '*.{ico,png,txt}',

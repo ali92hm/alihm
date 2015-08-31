@@ -1,73 +1,4 @@
-/*
-    Arcana by HTML5 UP
-    html5up.net | @n33co
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-'use strict';
-(function($) {
-
-    skel.init({
-        reset: 'full',
-        breakpoints: {
-            global:     { range: '*', href: '/styles/style.css', containers: 1400, grid: { gutters: 50 } },
-            wide:       { range: '-1680', href: '/styles/style-wide.css', containers: 1200, grid: { gutters: 40 } },
-            normal:     { range: '-1280', href: '/styles/style-normal.css', containers: 960, grid: { gutters: 30 }, viewport: { scalable: false } },
-            narrow:     { range: '-980', href: '/styles/style-narrow.css', containers: '95%' },
-            narrower:   { range: '-840', href: '/styles/style-narrower.css', containers: '95%!', grid: { zoom: 2 } },
-            mobile:     { range: '-736', href: '/styles/style-mobile.css', containers: '90%!', grid: { gutters: 20 } },
-            mobilep:    { range: '-480', href: '/styles/css/style-mobilep.css', grid: { zoom: 3 }, containers: '100%' }
-        },
-        plugins: {
-            layers: {
-                config: {
-                    mode: 'transform'
-                },
-                navPanel: {
-                    animation: 'revealX',
-                    breakpoints: 'narrower',
-                    clickToHide: true,
-                    height: '100%',
-                    hidden: true,
-                    html: '<div data-action="navList" data-args="nav"></div>',
-                    orientation: 'vertical',
-                    position: 'top-left',
-                    side: 'left',
-                    width: 275
-                },
-                titleBar: {
-                    breakpoints: 'narrower',
-                    height: 44,
-                    html: '<span class="toggle" data-action="toggleLayer" data-args="navPanel"></span><span class="title" data-action="copyHTML" data-args="logo"></span>',
-                    position: 'top-left',
-                    side: 'top',
-                    width: '100%'
-                }
-            }
-        }
-    });
-
-    $(function() {
-
-        var $window = $(window),
-            $body = $('body');
-
-        // Disable animations/transitions until the page has loaded.
-            $body.addClass('is-loading');
-
-            $window.on('load', function() {
-                $body.removeClass('is-loading');
-            });
-
-        // Dropdowns.
-            $('#nav > ul').dropotron({
-                offsetY: -15,
-                hoverDelay: 0,
-                alignment: 'center'
-            });
-
-    });
-
-})(jQuery);
+"use strict"
 
 $(function(){
     $('.close').click(function(){
@@ -76,8 +7,7 @@ $(function(){
         return false;
     });
     // Submitting forms
-    $('#contact_us').on('submit', function(){
-        console.log('hey');
+    $('#contact-me').on('submit', function(){
         var error = $('.notification.error');
         var success = $('.notification.success');
         success.slideUp(300);

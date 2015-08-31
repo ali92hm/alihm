@@ -1,20 +1,11 @@
 {
   "name": "alihm",
-  "version": "3.0.1",
+  "version": "4.0.1",
   "dependencies": {
-    "jquery": "~2.1.3",
-    "modernizr": "~2.8.1",
-    "normalize-scss": "~3.0.1",
-    "font-awesome": "~4.2.0",
+    "font-awesome": "~4.4.0",
     "html5shiv": "~3.7.2",
-    "respond": "~1.4.2",
-    "skel": "https://github.com/n33/skel.git#~2.1.0",
-    "jquery.dropotron": "https://github.com/n33/jquery.dropotron.git#~1.4.3",
+    "jquery": "~2.1.3",
     "mandrill-api": "~1.0.38"
   },
-  "devDependencies": {},
-  "resolutions": {
-    "jquery": "~2.1.3",
-    "font-awesome": "~4.2.0"
-  }
+  "devDependencies": {}
 }
