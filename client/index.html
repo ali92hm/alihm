@@ -11,7 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<!-- build:js(client) scripts/global.js -->
-        <script src="/bower_components/jquery/dist/jquery.js"></script>
+        <script src="/bower_components/jquery/dist/jquery.min.js"></script>
         <script src="/bower_components/mandrill-api/mandrill.min.js"></script>
         <!--[if lte IE 8]><script src="/bower_components/html5shiv/dist/html5shiv.min.js"></script><![endif]-->
         <!--[if lte IE 8]><script src="/scripts/vendor/respond.min.js"></script><![endif]-->
@@ -39,6 +39,14 @@
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-54262678-1');ga('send','pageview');
+
+            var trackOutboundLink = function(url) {
+                ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+                    function () {
+                    document.location = url;
+                    }
+                });
+            }
         </script>
 
 	</head>
@@ -86,10 +94,10 @@
                         <h2>In the meantime</h2>  
                         <p>Here is my resume and other links.</p>
 							<ul class="icons">
-								<li><a href="https://github.com/A92hm" class="fa-github">Github</a></li>
-								<li><a href="https://www.linkedin.com/pub/ali-hajimirza/99/3a8/140" class="fa-linkedin">Linked In</a></li>
-								<li><a href="http://twitter.com/ali92hm" class="fa-twitter">Twitter</a></li>
-                                <li><a href="https://s3-us-west-2.amazonaws.com/alihm.net/ahm-resume.pdf" class="fa-file-pdf-o">Resume</a></li>
+								<li><a href="https://github.com/A92hm" onclick="trackOutboundLink('https://github.com/A92hm'); return false;" class="fa-github">Github</a></li>
+								<li><a href="https://www.linkedin.com/pub/ali-hajimirza/99/3a8/140" onclick="trackOutboundLink('https://www.linkedin.com/pub/ali-hajimirza/99/3a8/140'); return false;" class="fa-linkedin">Linked In</a></li>
+								<li><a href="http://twitter.com/ali92hm" onclick="trackOutboundLink('http://twitter.com/ali92hm'); return false;" class="fa-twitter">Twitter</a></li>
+                                <li><a href="https://s3-us-west-2.amazonaws.com/alihm.net/ahm-resume.pdf" onclick="trackOutboundLink('https://s3-us-west-2.amazonaws.com/alihm.net/ahm-resume.pdf'); return false;" class="fa-file-pdf-o">Resume</a></li>
 							</ul>
 						</footer>
 					</section>
