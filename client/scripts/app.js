@@ -1,4 +1,4 @@
-"use strict"
+'use strict';
 
 $(function(){
     $('.close').click(function(){
@@ -6,6 +6,18 @@ $(function(){
         $('.notification.success').slideUp(300);
         return false;
     });
+
+    // Validating an email address
+    function isValidateEmail(email) {
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
+
+    // Sending emails using mandrill
+    function sendMail(subject, body, success, error)
+    {
+    }
+    
     // Submitting forms
     $('#contact-me').on('submit', function(){
         var error = $('.notification.error');
@@ -31,25 +43,4 @@ $(function(){
         );
         return false;
     });
-
-    // Sending emails using mandrill
-    function sendMail(subject, body, success, error)
-    {
-        var mailer = new mandrill.Mandrill('fkX3tt_MZMIoCTUJ395dQg');
-        var message = {
-            'message': {
-                'text': body+'\n\n Note: This is an automated email send by alihm.net',
-                'subject': subject,
-                'from_email': 'info@alihm.net',
-                'from_name': 'Ali Hajimirza Website',
-                'to': [{'email': 'info@alihm.net'}]
-            }
-        };
-        mailer.call('/messages/send', message, success, error);
-    }
-    // Validating an email address
-    function isValidateEmail(email) {
-        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(email);
-    }
 });
