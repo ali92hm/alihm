@@ -1,0 +1,24 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: alihm-dep
+spec:
+  replicas: 1
+  progressDeadlineSeconds: 100
+  template:
+    metadata:
+      labels:
+        name: alihm
+        app: nginx
+    spec:
+      containers:
+        - name: alihm
+          image: ali92hm/alihm:v4
+          ports:
+            - containerPort: 80
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 10
+            periodSeconds: 5
