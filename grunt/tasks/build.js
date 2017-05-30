@@ -12,7 +12,6 @@ var taskConfig = function(grunt) {
         'autoprefixer:server',
         'useminPrepare',
         'concat:generated',
-        'cssmin',
         'usemin',
         'htmlmin:dist',
         'uglify',

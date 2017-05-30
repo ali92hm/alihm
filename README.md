@@ -1,11 +1,11 @@
-#AliHM [![Build Status](https://travis-ci.org/A92hm/alihm.svg)](https://travis-ci.org/A92hm/alihm) [![Dependency Status](https://david-dm.org/a92hm/alihm.svg)](https://david-dm.org/a92hm/alihm) [![devDependency Status](https://david-dm.org/a92hm/alihm/dev-status.svg)](https://david-dm.org/a92hm/alihm#info=devDependencies)
+#AliHM [![Build Status](https://travis-ci.org/ali92hm/alihm.svg)](https://travis-ci.org/ali92hm/alihm) [![Dependency Status](https://david-dm.org/ali92hm/alihm.svg)](https://david-dm.org/ali92hm/alihm) [![devDependency Status](https://david-dm.org/ali92hm/alihm/dev-status.svg)](https://david-dm.org/ali92hm/alihm#info=devDependencies)
 This the personal website of [Ali Hajimirza](www.alihm.net).
 
 ##Usage
 ###Install
 To use this script clone this repository on your remote server.
 ```bash
-git clone https://github.com/A92hm/alihm.git && cd alihm
+git clone https://github.com/ali92hm/alihm.git && cd alihm
 npm install
 bower install
 ```
@@ -80,7 +80,7 @@ grunt build
     │       └── test.js
     └── node_modules                - Contains bower modules
 
-##[Potential Bugs](https://github.com/A92hm/alihm/issues)
+##[Potential Bugs](https://github.com/ali92hm/alihm/issues)
 
 ##To do
 * Transition to a template with more content pages.

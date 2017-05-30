@@ -3,11 +3,13 @@
   "version": "4.0.1",
   "description": "Ali Hajimirza's personal website",
   "scripts": {
+    "start": "grunt serve",
+    "build": "grunt build",
     "test": "grunt test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/A92hm/alihm"
+    "url": "https://github.com/ali92hm/alihm"
   },
   "keywords": [
     "Ali",
@@ -16,14 +18,13 @@
   "author": "Ali Hajimirza",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/A92hm/alihm/issues"
+    "url": "https://github.com/ali92hm/alihm/issues"
   },
   "homepage": "http://www.alihm.net",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "bower": "~1.7.9",
-    "grunt": "~1.0.1",
+    "grunt": "^1.0.1",
     "grunt-autoprefixer": "~3.0.4",
     "grunt-concurrent": "2.3.0",
     "grunt-contrib-clean": "1.0.0",
