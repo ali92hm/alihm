@@ -8,10 +8,11 @@ metadata:
 spec:
   tls:
   - hosts:
-    - echo.alihm.net
+    - www.alihm.net
+    # - alihm.net
     secretName: alihm-tls
   rules:
-  - host: echo.alihm.net
+  - host: www.alihm.net
     http:
       paths:
       - path: /
