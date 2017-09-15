@@ -1,15 +1,15 @@
-#AliHM [![Build Status](https://travis-ci.org/ali92hm/alihm.svg)](https://travis-ci.org/ali92hm/alihm) [![Dependency Status](https://david-dm.org/ali92hm/alihm.svg)](https://david-dm.org/ali92hm/alihm) [![devDependency Status](https://david-dm.org/ali92hm/alihm/dev-status.svg)](https://david-dm.org/ali92hm/alihm#info=devDependencies)
+# AliHM [![Build Status](https://travis-ci.org/ali92hm/alihm.svg)](https://travis-ci.org/ali92hm/alihm) [![Dependency Status](https://david-dm.org/ali92hm/alihm.svg)](https://david-dm.org/ali92hm/alihm) [![devDependency Status](https://david-dm.org/ali92hm/alihm/dev-status.svg)](https://david-dm.org/ali92hm/alihm#info=devDependencies)
 This the personal website of [Ali Hajimirza](www.alihm.net).
 
-##Usage
-###Install
+## Usage
+### Install
 To use this script clone this repository on your remote server.
 ```bash
 git clone https://github.com/ali92hm/alihm.git && cd alihm
 npm install
 bower install
 ```
-###Execution
+### Execution
 To develop
 ```bash
 grunt serve
@@ -23,13 +23,13 @@ To build final product
 grunt build
 ```
 
-##Dependencies
+## Dependencies
 * [node](http://nodejs.org)
 * [npm](https://www.npmjs.com)
 * [bower](https://github.com/bower/bower)
 * [grunt](http://gruntjs.com)
 
-##Structure
+## Structure
     alihm
     .
     ├── .editorconfig
@@ -80,10 +80,10 @@ grunt build
     │       └── test.js
     └── node_modules                - Contains bower modules
 
-##[Potential Bugs](https://github.com/ali92hm/alihm/issues)
+## [Potential Bugs](https://github.com/ali92hm/alihm/issues)
 
-##To do
+## To do
 * Transition to a template with more content pages.
 
-##License
+## License
 [Creative Commons license](http://creativecommons.org/licenses/by/4.0/)
