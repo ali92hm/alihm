@@ -9,8 +9,8 @@ module.exports = {
   port: process.env.PORT || 3000,
   httpsPort: process.env.HTTPS_PORT || 443,
   letsEncrypt: {
-    server: 'staging',
-    webrootPath: '/tmp/acme-challenges',
-    email: 'dev@alihm.net'
+    server: process.env.LETS_ENCRYPT_SERVER || 'staging',
+    webrootPath: process.env.LETS_ENCRYPT_CERT_PATH || '/tmp/acme-challenges',
+    email: process.env.LETS_ENCRYPT_EMAIL
   }
 }
