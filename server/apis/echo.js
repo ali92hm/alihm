@@ -5,7 +5,7 @@ module.exports = (app) => {
   app.use('/api/echo', router)
 }
 
-router.all('/', async (req, res, next) => {
+router.all('/', (req, res, next) => {
   let result = {
     message: `Recieved ${req.method}`,
     queryString: req.query,

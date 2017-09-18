@@ -5,6 +5,6 @@ module.exports = (app) => {
   app.use('/api/health', router)
 }
 
-router.get('/', async (req, res, next) => {
+router.get('/', (req, res, next) => {
   res.send(200, {message: 'success'})
 })
