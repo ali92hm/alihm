@@ -23,7 +23,13 @@
     "url": "https://github.com/ali92hm/alihm/issues"
   },
   "homepage": "http://www.alihm.net",
-  "dependencies": {},
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "compression": "^1.7.0",
+    "express": "^4.15.4",
+    "glob": "^7.1.2",
+    "morgan": "^1.8.2"
+  },
   "devDependencies": {
     "bower": "~1.8.2",
     "grunt": "^1.0.1",

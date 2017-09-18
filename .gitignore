@@ -6,7 +6,6 @@ client/bower_components
 client/.serve
 .tmp
 .grunt
-server/config/secrets.js
 
 
 # OS generated files #
