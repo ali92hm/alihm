@@ -1,16 +1,15 @@
 const express = require('express')
 const router = express.Router()
+const redirects = require('../config/config').redirects
 
 module.exports = (app) => {
   app.use('/r', router)
 }
 
-router.all('/', async (req, res, next) => {
-  let result = {
-    message: `Recieved ${req.method}`,
-    queryString: req.query,
-    body: req.body
+router.get('/:name', (req, res, next) => {
+  if (redirects[req.params.name]) {
+    return res.redirect(301, redirects[req.params.name])
   }
 
-  res.send(result)
+  res.sendStatus(404)
 })
