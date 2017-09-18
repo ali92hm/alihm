@@ -3,7 +3,7 @@
   "version": "4.0.1",
   "description": "Ali Hajimirza's personal website",
   "scripts": {
-    "preinstall": "bower install",
+    "postinstall": "bower install",
     "start": "node server/app.js",
     "dev": "grunt serve",
     "build": "grunt build",
@@ -28,6 +28,7 @@
     "compression": "^1.7.0",
     "express": "^4.15.4",
     "glob": "^7.1.2",
+    "greenlock-express": "^2.0.11",
     "morgan": "^1.8.2"
   },
   "devDependencies": {
