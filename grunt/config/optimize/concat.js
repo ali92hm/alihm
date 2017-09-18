@@ -1,12 +1,9 @@
 /**
  * Configuration for concat task(s)
  */
-'use strict';
 
-var taskConfig = function(grunt) {
+const taskConfig = (grunt) => {
+  grunt.config.set('concat', {})
+}
 
-    grunt.config.set('concat', {});
-
-};
-
-module.exports = taskConfig;
+module.exports = taskConfig

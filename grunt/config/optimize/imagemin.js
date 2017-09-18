@@ -1,21 +1,18 @@
 /**
  * Configuration for imagemin task(s)
  */
-'use strict';
 
-var taskConfig = function(grunt) {
+const taskConfig = (grunt) => {
+  grunt.config.set('imagemin', {
+    dist: {
+      files: [{
+        expand: true,
+        cwd: '<%= yeogurt.client %>/images',
+        src: '**/*.{png,jpg,jpeg,gif}',
+        dest: '<%= yeogurt.dist %>/images'
+      }]
+    }
+  })
+}
 
-    grunt.config.set('imagemin', {
-        dist: {
-            files: [{
-                expand: true,
-                cwd: '<%= yeogurt.client %>/images',
-                src: '**/*.{png,jpg,jpeg,gif}',
-                dest: '<%= yeogurt.dist %>/images'
-            }]
-        }
-    });
-
-};
-
-module.exports = taskConfig;
+module.exports = taskConfig

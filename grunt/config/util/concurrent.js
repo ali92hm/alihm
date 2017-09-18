@@ -1,18 +1,14 @@
 /**
  * Configuration for concurrent task(s)
  */
-'use strict';
 
-var taskConfig = function(grunt) {
+const taskConfig = (grunt) => {
+  grunt.config.set('concurrent', {
+    compile: [
+      'imagemin:dist',
+      'svgmin:dist'
+    ]
+  })
+}
 
-    grunt.config.set('concurrent', {
-        compile: [
-            'imagemin:dist',
-            'svgmin:dist',
-            'sass:dist',
-        ]
-    });
-
-};
-
-module.exports = taskConfig;
+module.exports = taskConfig

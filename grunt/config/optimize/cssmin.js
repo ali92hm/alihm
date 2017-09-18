@@ -1,9 +1,8 @@
 /**
  * Configuration for cssmin task(s)
  */
-'use strict'
 
-var taskConfig = function (grunt) {
+const taskConfig = (grunt) => {
   grunt.config.set('cssmin', {
     target: {
       files: [{
