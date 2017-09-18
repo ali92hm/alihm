@@ -6,16 +6,16 @@ const app = express()
 require('./config/express')(app, config)
 
 if (config.isProduction) {
-  const ssl = require('./config/ssl')
+  const ssl = require('./config/ssl')(config)
   // handles acme-challenge and redirects to https
-  require('http').createServer(ssl.middleware(require('redirect-https')())).listen(config.httpPort, () => {
-    console.log('Listening for ACME http-01 challenges on', config.httpPort)
+  require('http').createServer(ssl.middleware(require('redirect-https')())).listen(config.port, () => {
+    console.log('Listening for ACME http-01 challenges on', config.port)
   })
 
   app.use(wwwRedirect())
 
   // handles app
-  require('redirect-https').createServer(ssl.httpsOptions, ssl.middleware(app)).listen(config.httpsPort, () => {
+  require('https').createServer(ssl.httpsOptions, ssl.middleware(app)).listen(config.httpsPort, () => {
     console.log('app listening on port', config.httpsPort)
   })
 } else {

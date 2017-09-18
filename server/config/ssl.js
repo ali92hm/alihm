@@ -4,18 +4,18 @@ const certbot = require('le-store-certbot')
 
 module.exports = (config) => {
   return greenlock.create({
-    server: config.server,
+    server: config.letsEncrypt.server,
 
     challenges: {
-      'http-01': challenge.create({ webrootPath: config.webrootPath })
+      'http-01': challenge.create({ webrootPath: config.letsEncrypt.webrootPath })
     },
-    store: certbot.create({ webrootPath: config.webrootPath }),
+    store: certbot.create({ webrootPath: config.letsEncrypt.webrootPath }),
 
     approveDomains: (opts, certs, cb) => {
       if (certs) {
         opts.domains = certs.altnames
       } else {
-        opts.email = config.email
+        opts.email = config.letsEncrypt.email
         opts.agreeTos = true
       }
 
