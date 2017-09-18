@@ -19,7 +19,7 @@ module.exports = (app, config) => {
   }))
   app.use(compress())
 
-  let apis = glob.sync(config.root + '/app/apis/*.js')
+  let apis = glob.sync(config.root + '/server/apis/*.js')
   apis.forEach((api) => {
     require(api)(app)
   })
