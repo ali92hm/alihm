@@ -6,10 +6,13 @@ const compress = require('compression')
 
 module.exports = (app, config) => {
   app.locals.ENV = config.env
-  app.locals.ENV_DEVELOPMENT = config.env === 'development'
+  app.locals.ENV_DEVELOPMENT = config.isProduction
+
+  if (config.isProduction) {
+    app.use(wwwRedirect())
+  }
 
   app.use(logger('dev'))
-  app.use(wwwRedirect())
   app.use(bodyParser.json())
   app.use(bodyParser.urlencoded({
     extended: true
@@ -29,7 +32,7 @@ module.exports = (app, config) => {
     next(err)
   })
 
-  if (app.get('env') === 'development') {
+  if (!config.isProduction) {
     app.use((err, req, res, next) => {
       res.status(err.status || 500)
       res.json({
