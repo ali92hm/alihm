@@ -6,7 +6,7 @@ const app = express()
 require('./config/express')(app, config)
 
 if (config.isProduction) {
-  const ssl = require('./ssl')
+  const ssl = require('./config/ssl')
   // handles acme-challenge and redirects to https
   require('http').createServer(ssl.middleware(require('redirect-https')())).listen(config.httpPort, () => {
     console.log('Listening for ACME http-01 challenges on', config.httpPort)
