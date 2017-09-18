@@ -5,6 +5,7 @@ module.exports = {
   root: rootPath,
   staticPath: path.join(rootPath, 'client'),
   env: process.env.NODE_ENV || 'development',
+  isProduction: process.env.NODE_ENV === 'production',
   port: process.env.PORT || 3000,
   httpsPort: process.env.HTTPS_PORT || 443
 }
