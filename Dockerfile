@@ -1,6 +1,16 @@
-FROM nginx:alpine
+FROM node:8.5.0-alpine
 
-RUN rm /etc/nginx/conf.d/default.conf
+LABEL maintainer="Ali Hajimirza <ali@alihm.net>"
 
-COPY dist /usr/share/nginx/html
-COPY conf /etc/nginx
+ENV NODE_ENV=production
+WORKDIR /usr/src/
+
+COPY package.json .
+RUN apk add --no-cache make gcc g++ python && \
+    npm install --production && \
+    apk del make gcc g++ python
+
+COPY server server
+COPY dist client
+
+CMD npm start
