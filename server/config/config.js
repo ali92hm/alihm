@@ -20,6 +20,6 @@ module.exports = {
     'real': 'https://github.com/ou-real',
     'igert': '',
     'parallel': '',
-    'resume': ''
+    'resume': 'https://drive.google.com/file/d/0B2FK75IKKYIWWnB0MFBhZzQ0ZDA/view'
   }
 }
