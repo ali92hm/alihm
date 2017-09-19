@@ -1,9 +1,10 @@
 {
   "name": "alihm",
-  "version": "4.0.1",
+  "version": "5.1.0",
   "description": "Ali Hajimirza's personal website",
   "scripts": {
     "start": "node server/app.js",
+    "postinstall": "bower install",
     "dev": "nodemon server/app.js",
     "serve": "grunt serve",
     "build": "grunt build",
@@ -22,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/ali92hm/alihm/issues"
   },
-  "homepage": "http://www.alihm.net",
+  "homepage": "https://www.alihm.net",
   "dependencies": {
     "body-parser": "^1.18.1",
     "compression": "^1.7.0",
@@ -62,6 +63,6 @@
     "time-grunt": "1.4.0"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=8.0.0"
   }
 }
