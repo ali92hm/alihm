@@ -18,8 +18,8 @@ module.exports = {
     'webjet': 'https://channel9.msdn.com/Events/Build/2017/T6979',
     'slotcar': 'https://www.youtube.com/watch?v=PDZbvw0xE-k',
     'real': 'https://github.com/ou-real',
-    'igert': '',
-    'parallel': '',
+    'igert': 'https://drive.google.com/file/d/0B2FK75IKKYIWcFl3a0tPOGlLOWc/view',
+    'parallel': 'https://parallel.illinois.edu/sites/default/files/pujare__hajimirza_poster_2013.pdf',
     'resume': 'https://drive.google.com/file/d/0B2FK75IKKYIWWnB0MFBhZzQ0ZDA/view'
   }
 }
