@@ -15,7 +15,8 @@ module.exports = {
   },
   redirects: {
     'iss': 'http://www.thequestinstitute.com/ISS/',
-    'webjet': 'https://channel9.msdn.com/Events/Build/2017/T6979',
+    'build': 'https://channel9.msdn.com/Events/Build/2017/T6979',
+    'webjet': 'https://www.coindesk.com/webjet-ethereum-pilot-aims-at-hotel-industrys-dirty-little-secret/',
     'slotcar': 'https://www.youtube.com/watch?v=PDZbvw0xE-k',
     'real': 'https://github.com/ou-real',
     'igert': 'https://drive.google.com/file/d/0B2FK75IKKYIWcFl3a0tPOGlLOWc/view',
