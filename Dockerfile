@@ -1,4 +1,4 @@
-FROM node:8.5.0-alpine
+FROM node:carbon-alpine
 
 LABEL maintainer="Ali Hajimirza <ali@alihm.net>"
 
@@ -8,9 +8,7 @@ ENV NODE_ENV $NODE_ENV
 WORKDIR /usr/src/
 
 COPY package.json .
-RUN apk add --no-cache make gcc g++ python && \
-    npm install && \
-    apk del make gcc g++ python
+RUN npm install
 
 COPY server server
 COPY dist client
