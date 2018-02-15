@@ -1,0 +1,14 @@
+
+image:
+  repository: ali92hm/alihm
+  tag: latest
+  replicaCount: 2
+
+service:
+  type: ClusterIP
+  externalPort: 80
+  internalPort: 3000
+
+ingress:
+  host: "ali.alihm.net"
+  redirectWWW: true
