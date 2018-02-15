@@ -8,10 +8,6 @@ module.exports = (app, config) => {
   app.locals.ENV = config.env
   app.locals.ENV_DEVELOPMENT = config.isProduction
 
-  if (config.isProduction) {
-    app.use(wwwRedirect())
-  }
-
   app.use(logger('dev'))
   app.use(bodyParser.json())
   app.use(bodyParser.urlencoded({
@@ -51,15 +47,4 @@ module.exports = (app, config) => {
   })
 
   return app
-}
-
-const wwwRedirect = () => {
-  return (req, res, next) => {
-    if (req.headers.host.match(/^www/) != null) {
-      return next()
-    }
-
-    let protocol = req.headers['x-forwarded-proto'] || req.protocol
-    res.redirect(301, `${protocol}://www.${req.headers.host}${req.url}`)
-  }
 }
