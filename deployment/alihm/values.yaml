@@ -1,7 +1,7 @@
 
 image:
   repository: ali92hm/alihm
-  tag: latest
+  tag: stable
   replicaCount: 2
 
 service:
@@ -10,5 +10,5 @@ service:
   internalPort: 3000
 
 ingress:
-  host: "ali.alihm.net"
+  host: alihm.net
   redirectWWW: true
