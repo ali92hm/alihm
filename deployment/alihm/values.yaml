@@ -3,6 +3,7 @@ image:
   repository: ali92hm/alihm
   tag: stable
   replicaCount: 2
+  imagePullPolicy: Always
 
 service:
   type: ClusterIP
