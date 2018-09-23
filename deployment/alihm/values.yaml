@@ -11,5 +11,6 @@ service:
   internalPort: 3000
 
 ingress:
+  clusterIssuer: letsencrypt-prod
   host: alihm.net
   redirectWWW: true
