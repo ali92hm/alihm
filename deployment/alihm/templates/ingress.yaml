@@ -18,7 +18,7 @@ spec:
     {{- if .Values.ingress.redirectWWW }}
     - www.{{ .Values.ingress.host }}
     {{- end }}
-    secretName: {{ .Release.Name }}-tls-certs
+    secretName: {{ .Release.Name }}-cert-secret
   rules:
   - host: {{ .Values.ingress.host }}
     http:
