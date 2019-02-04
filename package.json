@@ -1,6 +1,6 @@
 {
   "name": "alihm",
-  "version": "5.5.0",
+  "version": "5.5.1",
   "description": "Ali Hajimirza's personal website",
   "scripts": {
     "start": "node server/app.js",

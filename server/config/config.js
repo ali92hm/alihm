@@ -14,7 +14,7 @@ module.exports = {
     email: process.env.LETS_ENCRYPT_EMAIL
   },
   redirects: {
-    'iss': 'http://www.thequestinstitute.com/ISS/',
+    'iss': 'http://www.questforspace.com/portfolio-item/inspiring-a-new-breed-of-innovators/',
     'build': 'https://channel9.msdn.com/Events/Build/2017/T6979',
     'webjet': 'https://www.coindesk.com/webjet-ethereum-pilot-aims-at-hotel-industrys-dirty-little-secret/',
     'slotcar': 'https://www.youtube.com/watch?v=PDZbvw0xE-k',
