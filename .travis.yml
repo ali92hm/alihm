@@ -6,20 +6,11 @@ env:
   PROJECT_NAME=alihm
   PORT=3000
 
-node_js:
-  - "8"
-
 services:
   - docker
 
-install:
-  - npm install
-
 before_script:
-  # Unit tests
-  - npm test
-  - npm run build
-  - docker build -t $DOCKER_USERNAME/$PROJECT_NAME --build-arg NODE_ENV=production .
+  - docker build -t $DOCKER_USERNAME/$PROJECT_NAME .
   - docker run -d -e "NODE_ENV=test" -p $PORT:$PORT $DOCKER_USERNAME/$PROJECT_NAME
 
 script:
