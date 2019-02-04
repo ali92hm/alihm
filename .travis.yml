@@ -1,7 +1,5 @@
 sudo: required
 
-language: node_js
-
 env:
   PROJECT_NAME=alihm
   PORT=3000
