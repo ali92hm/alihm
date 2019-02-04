@@ -41,15 +41,13 @@ npm run build
     ├── Gruntfile.js                - Grunt configuration
     ├── LICENSE-CC
     ├── package.json                - Used npm packages
-    ├── bower.json                  - Used bower packages
     ├── README.md
-    ├── node_modules                - Contains bower modules
+    ├── node_modules                - Contains npm modules
     ├── server
     │   ├── app.js                  - Starting module of the backend
     │   ├── config                  - Contains application config
     │   └── apis                    - Contains api route handelers
     ├── client                      - Contains the static files
-    │   ├── bower_components        - Contains bower modules
     │   ├── images                  - Contains images
     │   ├── scripts                 - Contains JavaScript files
     │   ├── styles                  - Contains style files {css, scss, sass, less
