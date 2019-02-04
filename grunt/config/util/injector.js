@@ -7,7 +7,7 @@ const taskConfig = (grunt) => {
     options: {
 
     },
-    // Inject application script files into index.html (doesn't include bower)
+    // Inject application script files into index.html
     scripts: {
       options: {
         transform: (filePath) => {

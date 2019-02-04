@@ -1,6 +1,5 @@
 node_modules
 dist
-client/bower_components
 client/.serve
 .tmp
 .grunt
