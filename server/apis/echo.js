@@ -7,7 +7,7 @@ module.exports = (app) => {
 
 router.all('/', (req, res, next) => {
   let result = {
-    message: `Recieved ${req.method}`,
+    message: `Received ${req.method}`,
     queryString: req.query,
     body: req.body
   }
