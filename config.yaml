@@ -1,0 +1,42 @@
+# Hugo config
+baseURL: https://alihm.net
+languageCode: en-us
+title: Ali Hajimirza
+publishDir: dist
+enableRobotsTXT: true
+
+# permalinks:
+#   blog: blog/:title/
+
+googleAnalytics: your-google-analytics-id
+disqusShortname: your-disqus-shortname
+
+# Settings can be found here: https://gohugo.io/getting-started/configuration-markup#
+markup:
+  highlight:
+    guessSyntax: true
+    style: emacs
+  tableOfContents:
+    endLevel: 3
+    ordered: false
+    startLevel: 2
+
+# Social links in footer, support github,twitter,stackoverflow,facebook
+social:
+  # e.g.
+  github: your-github-link
+  twitter: your-github-link
+  # linkedIn: asdlkfj
+  # resume: resume
+
+
+# Site parameters
+params:
+  # Site Author
+  author: Ali Hajimirza
+  # Author biography
+  bio: Software Engineer, husband, father
+  # Site Description, used in HTML meat
+  description: My Blog
+  # To enable math typesetting , you could set `math: true`, default is `false`
+  math: false
