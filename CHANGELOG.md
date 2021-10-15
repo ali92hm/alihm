@@ -1,5 +1,10 @@
 # Changelog
 
+## [6.1.1] - 2021-10-15
+
+* Fix license links in readme (CC 4 -> CC3)
+* Add attribution clauses
+
 ## [6.1.0] - 2021-10-15
 
 * Add all social links
