@@ -21,11 +21,6 @@ markup:
     ordered: false
     startLevel: 2
 
-# TODO delete this
-social:
-  github: https://github.com/ali92hm
-  twitter: https://twitter.com/ali92hm
-
 # Site parameters
 params:
   # Site Author

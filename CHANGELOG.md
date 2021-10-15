@@ -1,5 +1,9 @@
 # Changelog
 
+## [6.1.0] - 2021-10-15
+
+* Add all social links
+
 ## [6.0.1] - 2021-10-15
 
 * Fixed variable names on the landing page
