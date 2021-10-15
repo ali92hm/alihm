@@ -1,8 +1,10 @@
 # AliHM.net Website
 
-![CI Tests] [![CC BY 4.0][cc-by-shield]][cc-by]
+![CI Tests] [![CC BY 3.0][cc-by-shield]][cc-by]
 
-This repository contains the code for my personal [website] and [blog]
+This repository contains the code for my personal [website] and [blog].
+
+> This website would not have been possible without the work of [ajlkn] from [html5up.net] (used in landing page) and [nodejh]'s great work on the [hugo-theme-mini] (used for the blog)
 
 ## Getting started
 
@@ -95,14 +97,18 @@ chat rooms, and mailing lists is expected to follow the [CODE_OF_CONDUCT]
 
 [Creative Commons license]
 
-[![CC BY 4.0][cc-by-image]][cc-by]
+[![CC BY 3.0][cc-by-image]][cc-by]
 
 [website]: https://alihm.net
 [blog]: https://alihm.net/blog
 [Hugo]: https://gohugo.io/getting-started/installing/
+[ajlkn]: https://github.com/ajlkn
+[html5up.net]: https://html5up.net
+[nodejh]: https://github.com/nodejh
+[hugo-theme-mini]: https://github.com/nodejh/hugo-theme-mini
 [ci tests]: https://github.com/ali92hm/alihm/actions/workflows/build.yml/badge.svg
 [file an issue]: https://github.com/ali92hm/alihm/issues
-[creative commons license]: http://creativecommons.org/licenses/by/4.0/
-[cc-by]: http://creativecommons.org/licenses/by/4.0/
-[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
+[creative commons license]: http://creativecommons.org/licenses/by/3.0/
+[cc-by]: http://creativecommons.org/licenses/by/3.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/3.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%203.0-lightgrey.svg
