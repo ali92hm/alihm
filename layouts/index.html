@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+
+    <body class="is-loading">
+        <div id="wrapper">
+            <section id="main">
+                <header>
+                    <span class="avatar"><img src="images/ali_hajimirza.jpg" alt="ali's portrait image" /></span>
+                    <h1>{{ .Site.Params.author }}</h1>
+                    <p>{{ .Site.Params.bio }}</p>
+                    <p>{{ .Site.Params.bio2 }}</p>
+                </header>
+
+                <footer>
+                    <p>Here is my blog, resume, and other links.</p>
+                    <ul class="icons">
+                        <!-- <li><a class="fa-pencil-square-o" href={{ "/blog" | relURL }}>Github</a></li> -->
+                        <li><a target="_blank" class="fa-file-pdf-o"
+                            href={{ .Site.Params.Social.resume }}>Resume</a></li>
+                        <li><a target="_blank" class="fa-github" href={{ .Site.Params.Social.github }}>Github</a></li>
+                        <li><a target="_blank" class="fa-linkedin"
+                            href={{ .Site.Params.Social.linkedIn }}>LinkedIn</a></li>
+                        <li><a target="_blank" class="fa-twitter" href={{ .Site.Params.Social.twitter }}>Twitter</a></li>
+                    </ul>
+                </footer>
+            </section>
+
+            <footer id="footer">
+                {{ partial "footer.html" . }}
+            </footer>
+        </div>
+
+        <script>
+        if ('addEventListener' in window) {
+            window.addEventListener('load', function () { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+            document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+        }
+        </script>
+
+    </body>
+</html>

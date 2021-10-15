@@ -1,10 +1,5 @@
-node_modules
-*.log
-dist
-.ftppass
-client/.serve
-.tmp
-.grunt
+resources/*
+dist/*
 
 
 # OS generated files #

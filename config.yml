@@ -1,0 +1,54 @@
+# Hugo config
+baseURL: https://alihm.net
+languageCode: en-us
+title: Ali Hajimirza
+publishDir: dist
+enableRobotsTXT: true
+
+permalinks:
+  blog: blog/:title/
+
+googleAnalytics: UA-106760912-1
+# disqusShortname:
+
+# Settings can be found here: https://gohugo.io/getting-started/configuration-markup#
+markup:
+  highlight:
+    guessSyntax: true
+    style: emacs
+  tableOfContents:
+    endLevel: 3
+    ordered: false
+    startLevel: 2
+
+# TODO delete this
+social:
+  github: https://github.com/ali92hm
+  twitter: https://twitter.com/ali92hm
+
+# Site parameters
+params:
+  # Site Author
+  author: Ali Hajimirza
+  # Site Description, used in HTML meat
+  description: Ali Hajimirza's personal website and blog. Links to my resume, Github, LinkedIn, blog, and Twitter
+  # Will be used in open graph metadata
+  images:
+    - images/ali_hajimirza.jpg
+  # Landing page bio
+  landingBio: Software Engineer
+  landingBio2: "Previously: Convoy Inc, Microsoft"
+  # Blog title:
+  blogTitle: Ali's blog
+  # Blog bio
+  BlogDescription: A fool of randomness, thoughts are my own
+  # 404 Title
+  title404: 404 - Page Not Found
+  # 404 page description
+  descriptions404: The content you're looking for doesn't seem to exist.
+  # Social links
+  social:
+    github: https://github.com/ali92hm
+    twitter: https://twitter.com/ali92hm
+    linkedIn: https://www.linkedin.com/in/ali92hm
+    resume: https://drive.google.com/file/d/18Q5_8-v_G5iH6HNVK61lurFlvsM02aor/view

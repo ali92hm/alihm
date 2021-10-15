@@ -1,0 +1,13 @@
+{
+    // Editor
+    "editor.rulers": [88, 120],
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // Files
+    "files.exclude": {
+        "resources": true
+    },
+    "files.watcherExclude": {
+        "resources": true
+    }
+}
