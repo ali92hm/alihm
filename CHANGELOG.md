@@ -1,5 +1,11 @@
 # Changelog
 
+## [6.0.1] - 2021-10-15
+
+* Fixed variable names on the landing page
+* Set aws assume role duration to 1h
+* Show draft posts in the development server
+
 ## [6.0.0] - 2021-10-15
 
 * Migrated the website to Hugo
