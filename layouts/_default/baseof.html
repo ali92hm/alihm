@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
-
     {{ partial "head.html" . }}
-
   </head>
 
   <body>
@@ -14,6 +11,10 @@
       {{  block "main" . }}{{ end }}
     </main>
 
+  <footer id="footer">
+    {{ partial "social.html" . }}
     {{ partial "footer.html" . }}
+  </footer>
+
   </body>
 </html>
