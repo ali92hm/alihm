@@ -13,3 +13,6 @@ serve:
 serve-dist: clean build
 	python -m http.server --directory dist
 
+deploy: clean build
+	./scripts/deploy.sh
+
