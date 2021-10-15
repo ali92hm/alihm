@@ -8,7 +8,7 @@ build:
 	./scripts/build.sh
 
 serve:
-	hugo server
+	hugo server --buildDrafts
 
 serve-dist: clean build
 	python -m http.server --directory dist
