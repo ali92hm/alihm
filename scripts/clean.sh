@@ -4,4 +4,4 @@ set -e
 source ./scripts/include/vars.sh
 
 rm -rf resoruces
-rm -rf dist
+rm -rf $DIST_DIR
