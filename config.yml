@@ -32,6 +32,9 @@ params:
   author: Ali Hajimirza
   # Site Description, used in HTML meat
   description: Ali Hajimirza's personal website and blog. Links to my resume, Github, LinkedIn, blog, and Twitter
+  # Will be used in open graph metadata
+  images:
+    - images/ali_hajimirza.jpg
   # Landing page bio
   landingBio: Software Engineer
   landingBio2: "Previously: Convoy Inc, Microsoft"
