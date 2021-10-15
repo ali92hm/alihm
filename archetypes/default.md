@@ -1,7 +1,9 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
+description:
 date: {{ .Date }}
-tags: []
+tags:
 draft: false
+images:
 
 ---
