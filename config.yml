@@ -32,11 +32,11 @@ params:
     - images/ali_hajimirza.jpg
   # Landing page bio
   landingBio: Software Engineer
-  landingBio2: "Previously: Convoy Inc, Microsoft"
+  landingBio2: "Previously: Convoy, Microsoft"
   # Blog title:
   blogTitle: Ali's blog
   # Blog bio
-  BlogDescription: A fool of randomness, thoughts are my own
+  BlogDescription: A fool of randomness
   # 404 Title
   title404: 404 - Page Not Found
   # 404 page description

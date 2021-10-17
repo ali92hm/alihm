@@ -1,9 +1,15 @@
 # Changelog
 
+## [6.2.0] - 2021-10-15
+
+* Added first blog post
+* Added the blog link to the landing page
+* Cleaned up bio
+
 ## [6.1.1] - 2021-10-15
 
 * Fix license links in readme (CC 4 -> CC3)
-* Add attribution clauses
+* Added attribution clauses
 
 ## [6.1.0] - 2021-10-15
 
