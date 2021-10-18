@@ -1,6 +1,10 @@
 # Changelog
 
-## [6.2.0] - 2021-10-15
+## [6.3.0] - 2021-10-18
+
+* Update resume link
+
+## [6.2.0] - 2021-10-17
 
 * Added first blog post
 * Added the blog link to the landing page
