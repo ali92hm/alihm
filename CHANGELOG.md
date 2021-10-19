@@ -1,5 +1,10 @@
 # Changelog
 
+## [6.3.1] - 2021-10-18
+
+* Only inject google analytics script in prod
+* Fixed a link in readme
+
 ## [6.3.0] - 2021-10-18
 
 * Update resume link
