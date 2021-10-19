@@ -107,6 +107,7 @@ chat rooms, and mailing lists is expected to follow the [CODE_OF_CONDUCT]
 [nodejh]: https://github.com/nodejh
 [hugo-theme-mini]: https://github.com/nodejh/hugo-theme-mini
 [ci tests]: https://github.com/ali92hm/alihm/actions/workflows/build.yml/badge.svg
+[CODE_OF_CONDUCT]: ./CODE_OF_CONDUCT.md
 [file an issue]: https://github.com/ali92hm/alihm/issues
 [creative commons license]: http://creativecommons.org/licenses/by/3.0/
 [cc-by]: http://creativecommons.org/licenses/by/3.0/
