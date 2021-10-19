@@ -7,6 +7,7 @@
 {{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}
 {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
   <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+  {{ template "_internal/google_analytics_async.html" . }}
 {{ else }}
   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 {{ end }}
@@ -32,8 +33,6 @@ integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="ano
 {{ end }}
 
 <link rel="shortcut icon" href="{{ "/images/favicon.png" | relURL }}" type="image/x-icon" />
-
-{{ template "_internal/google_analytics_async.html" . }}
 
 {{ if or .Params.math }}
   {{ partial "math.html" . }}
