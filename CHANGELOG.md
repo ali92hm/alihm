@@ -1,5 +1,10 @@
 # Changelog
 
+## [6.3.2] - 2022-02-10
+
+* Fix setting the `HUGO_ENV` to `production` for production builds.
+* This fixes google analytics script not getting injected
+
 ## [6.3.1] - 2021-10-18
 
 * Only inject google analytics script in prod
