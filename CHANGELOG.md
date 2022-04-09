@@ -1,5 +1,9 @@
 # Changelog
 
+## [6.4.0] - 2022-04-09
+
+* Update work bio
+
 ## [6.3.2] - 2022-02-10
 
 * Fix setting the `HUGO_ENV` to `production` for production builds.

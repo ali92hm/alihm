@@ -31,7 +31,7 @@ params:
   images:
     - images/ali_hajimirza.jpg
   # Landing page bio
-  landingBio: Software Engineer
+  landingBio: Software Engineer at stripe
   landingBio2: "Previously: Convoy, Microsoft"
   # Blog title:
   blogTitle: Ali's blog
