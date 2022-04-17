@@ -1,5 +1,10 @@
 # Changelog
 
+## [6.5.0] - 2022-04-17
+
+* Self serve font awesome
+* Change landing page to use the same fonts as the blog ('Helvetica Neue', Helvetica, Arial, sans-serif)
+
 ## [6.4.0] - 2022-04-09
 
 * Update work bio
