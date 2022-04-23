@@ -1,5 +1,9 @@
 # Changelog
 
+## [6.6.1] - 2022-04-23
+
+* Set yml schema for Github workflow files
+
 ## [6.6.0] - 2022-04-23
 
 * Remove Google Analytics
