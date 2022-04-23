@@ -1,5 +1,9 @@
 # Changelog
 
+## [6.6.0] - 2022-04-23
+
+* Remove Google Analytics
+
 ## [6.5.0] - 2022-04-17
 
 * Self serve font awesome

@@ -8,7 +8,6 @@ enableRobotsTXT: true
 permalinks:
   blog: blog/:title/
 
-googleAnalytics: UA-106760912-1
 # disqusShortname:
 
 # Settings can be found here: https://gohugo.io/getting-started/configuration-markup#
