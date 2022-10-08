@@ -1,6 +1,6 @@
 resources/*
 dist/*
-
+.hugo_build.lock
 
 # OS generated files #
 #
