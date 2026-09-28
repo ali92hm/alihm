@@ -1,5 +1,10 @@
 # Changelog
 
+## [6.8.1] - 2026-09-28
+
+* Update Twitter/X links to `x.com`
+* Upgrade vendored Font Awesome from 4.7.0 to 6.7.2 and swap the landing page's Twitter bird icon for the X logo (`fa-brands fa-x-twitter`)
+
 ## [6.8.0] - 2026-09-28
 
 * Add a `/travel` page with a world map (vendored [jsvectormap](https://github.com/themustafaomar/jsvectormap), a jQuery-free fork of [bjornd/jvectormap](https://github.com/bjornd/jvectormap)) color-coded by continent, plus a flag list of visited countries grouped by continent, sourced from `data/travel.yaml`
