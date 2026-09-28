@@ -1,9 +1,9 @@
 ---
 title: "Initial Commit"
-description: The stroy behind this website and blog
+description: The story behind this website and blog
 date: 2021-10-17T12:31:28-05:00
 tags:
-    - stroy
+    - story
     - background
 draft: false
 images:

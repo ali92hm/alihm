@@ -2,7 +2,7 @@
 {{ partial "profile.html" . }}
 
 <div id="list-page">
-    {{ $pages := .Site.RegularPages }}
+    {{ $pages := .Pages }}
     {{ $paginator := .Paginate ($pages) }}
     {{ range $paginator.Pages }}
         {{ $title := .Title }}

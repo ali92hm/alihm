@@ -1,5 +1,19 @@
 # Changelog
 
+## [6.7.2] - 2026-09-28
+
+* Fix empty `<title>` on every page except blog posts
+* Fix "Blog" link on landing page being mislabeled "Github"
+* Fix `make clean` not removing `resources/` (typo)
+* Fix blog list picking up all site pages instead of just blog pages
+* Fix "stroy" typo in initial-commit post (description + tag, now `/tags/story/`)
+* Blog posts now use their own front-matter description in `<meta name="description">` instead of the site-wide default
+* Only load Font Awesome on the landing page instead of on every page
+* Bump `actions/checkout` to v4 and `aws-actions/configure-aws-credentials` to v4
+* Pin Hugo version to `0.167.0` in CI instead of `"latest"`
+* Deploy the commit that actually passed CI (`workflow_run.head_sha`) instead of `master`'s current tip
+* Drop `--acl public-read` from the S3 deploy sync (unsupported on buckets with ACLs disabled by default)
+
 ## [6.7.1] - 2026-09-28
 
 * Bump Hugo version to 0.167.0
