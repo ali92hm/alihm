@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.7.1] - 2026-09-28
+
+* Bump Hugo version to 0.167.0
+* Update `peaceiris/actions-hugo` from v2 to v3 in CI workflows
+* Replace removed `.Site.RSSLink` and `.Site.DisqusShortname` template fields with their current equivalents
+* Rename `languageCode` to `locale` in config.yml per Hugo v0.158.0 deprecation
+
 ## [6.7.0] - 2022-10-08
 
 * Ported relevant changes from [hugo-theme-mini](https://github.com/nodejh/hugo-theme-mini/commits/master) up to commit [7f6f395](https://github.com/nodejh/hugo-theme-mini/commit/7f6f395052486d8cc52f768c1519dbe1c93afcd0)

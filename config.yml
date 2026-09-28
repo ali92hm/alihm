@@ -1,6 +1,6 @@
 # Hugo config
 baseURL: https://alihm.net
-languageCode: en-us
+locale: en-us
 title: Ali Hajimirza
 publishDir: dist
 enableRobotsTXT: true
@@ -8,7 +8,9 @@ enableRobotsTXT: true
 permalinks:
   blog: blog/:title/
 
-# disqusShortname:
+# services:
+#   disqus:
+#     shortname:
 
 # Settings can be found here: https://gohugo.io/getting-started/configuration-markup#
 markup:
