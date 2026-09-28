@@ -13,16 +13,6 @@
   height: 500px;
 }
 
-#travel-map .jvm-markers-labels-group text {
-  font-size: 12px;
-  font-weight: bold;
-  fill: #333;
-  paint-order: stroke;
-  stroke: #fff;
-  stroke-width: 3px;
-  stroke-linejoin: round;
-}
-
 .travel-legend {
   display: flex;
   flex-wrap: wrap;
