@@ -13,6 +13,16 @@
   height: 500px;
 }
 
+#travel-map .jvm-markers-labels-group text {
+  font-size: 12px;
+  font-weight: bold;
+  fill: #333;
+  paint-order: stroke;
+  stroke: #fff;
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+
 .travel-legend {
   display: flex;
   flex-wrap: wrap;
@@ -37,6 +47,14 @@
   border-radius: 2px;
 }
 
+.travel-legend .swatch.star {
+  width: auto;
+  height: auto;
+  color: #d4af00;
+  font-size: 14px;
+  line-height: 1;
+}
+
 #travel-countries {
   width: 100%;
   max-width: 960px;
@@ -56,7 +74,20 @@
   font-weight: bold;
 }
 
+#travel-countries .continent-flags .flag-wrap {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
 #travel-countries .continent-flags .flag {
-  margin-right: 6px;
   font-size: 1.3em;
+}
+
+#travel-countries .continent-flags .lived-star {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  font-size: 0.6em;
+  color: #d4af00;
 }

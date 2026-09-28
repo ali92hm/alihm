@@ -5,6 +5,9 @@
 
 {{ define "main" }}
 {{ $continents := site.Data.travel.continents }}
+{{ $livedIn := site.Data.travel.livedIn }}
+{{ $livedCodes := slice }}
+{{ range $livedIn }}{{ $livedCodes = $livedCodes | append .code }}{{ end }}
 {{ $countryCount := 0 }}
 {{ range $continents }}{{ $countryCount = add $countryCount (len .countries) }}{{ end }}
 
@@ -26,6 +29,11 @@
       <span class="swatch" style="background:{{ .color }}"></span> {{ .name }}
     </span>
     {{ end }}
+    {{ if $livedIn }}
+    <span class="legend-item">
+      <span class="swatch star">&#9733;</span> Lived here
+    </span>
+    {{ end }}
   </div>
 
   <table id="travel-countries">
@@ -34,7 +42,10 @@
       <td class="continent-name">{{ .name }}</td>
       <td class="continent-flags">
         {{ range .countries }}
-        <span class="flag" data-code="{{ .code }}" title="{{ .name }}"></span>
+        <span class="flag-wrap">
+          <span class="flag" data-code="{{ .code }}" title="{{ .name }}"></span>
+          {{ if in $livedCodes .code }}<span class="lived-star" title="Lived in {{ .name }}">&#9733;</span>{{ end }}
+        </span>
         {{ end }}
       </td>
     </tr>
@@ -47,6 +58,7 @@
 <script>
 (function () {
   var continents = {{ $continents | jsonify | safeJS }};
+  var livedIn = {{ $livedIn | jsonify | safeJS }};
 
   var regions = continents.map(function (continent) {
     var values = {};
@@ -69,6 +81,21 @@
     },
     series: {
       regions: regions
+    },
+    markers: livedIn.map(function (c) {
+      return { name: "Lived in " + c.name, coords: [c.lat, c.lng] };
+    }),
+    markerStyle: {
+      initial: {
+        fill: "#ffd700",
+        stroke: "#8a6d00",
+        r: 6
+      }
+    },
+    labels: {
+      markers: {
+        render: function (marker) { return marker.name; }
+      }
     }
   });
 
