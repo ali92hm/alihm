@@ -24,9 +24,13 @@ continents:
         name: Turkey
       - code: GB
         name: United Kingdom
+      - code: IE
+        name: Ireland
   - name: Asia
     color: "#f33e01"
     countries:
+      - code: CN
+        name: China
       - code: HK
         name: Hong Kong
       - code: JP
