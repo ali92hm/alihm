@@ -10,7 +10,7 @@ This repository contains the code for my personal [website] and [blog].
 
 ### System requirement
 
-- [Hugo] >= 0.104
+- [Hugo] >= 0.167.0
 
 ### Clone the repo
 
