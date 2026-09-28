@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("/css/vendor/font-awesome-4.7.0/css/font-awesome.min.css");
+/* Font Awesome is loaded separately as a <link> in layouts/partials/head.html */
 
 /*
   Identity by HTML5 UP
