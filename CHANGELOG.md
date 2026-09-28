@@ -1,5 +1,10 @@
 # Changelog
 
+## [6.8.0] - 2026-09-28
+
+* Add a `/travel` page with a world map (vendored [jsvectormap](https://github.com/themustafaomar/jsvectormap), a jQuery-free fork of [bjornd/jvectormap](https://github.com/bjornd/jvectormap)) color-coded by continent, plus a flag list of visited countries grouped by continent, sourced from `data/travel.yaml`
+* Add "Travel" link to the landing page links and the blog navigation
+
 ## [6.7.2] - 2026-09-28
 
 * Fix empty `<title>` on every page except blog posts

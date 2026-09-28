@@ -1,0 +1,54 @@
+# Colors from https://en.wikipedia.org/wiki/Continent#Number
+continents:
+  - name: North America
+    color: "#00cc00"
+    countries:
+      - code: US
+        name: United States
+      - code: CA
+        name: Canada
+      - code: MX
+        name: Mexico
+  - name: Europe
+    color: "#c10000"
+    countries:
+      - code: FR
+        name: France
+      - code: DE
+        name: Germany
+      - code: IT
+        name: Italy
+      - code: ES
+        name: Spain
+      - code: TR
+        name: Turkey
+      - code: GB
+        name: United Kingdom
+  - name: Asia
+    color: "#f33e01"
+    countries:
+      - code: HK
+        name: Hong Kong
+      - code: JP
+        name: Japan
+      - code: IR
+        name: Iran
+      - code: TH
+        name: Thailand
+      - code: PH
+        name: Philippines
+      - code: KR
+        name: South Korea
+      - code: SG
+        name: Singapore
+      - code: TW
+        name: Taiwan
+      - code: AE
+        name: United Arab Emirates
+  - name: Oceania
+    color: "#c04080"
+    countries:
+      - code: AU
+        name: Australia
+      - code: FJ
+        name: Fiji

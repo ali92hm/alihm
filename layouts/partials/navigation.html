@@ -1,6 +1,7 @@
 <nav class="navigation">
     <a href="{{ "/blog" | relURL }}">Blog</a>
     <a href="{{ "/tags" | relURL }}">Tags</a>
+    <a href="{{ "/travel" | relURL }}">Travel</a>
     <a href="{{ with .Site.Home.OutputFormats.Get "RSS" }}{{ .Permalink }}{{ end }}">Subscribe</a>
     {{ if not .IsHome }}
         <a class="button" href="{{ "/" | relURL }}">Home</a>

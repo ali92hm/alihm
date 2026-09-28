@@ -1,0 +1,84 @@
+{{ define "extra_head" }}
+<link rel="stylesheet" href="{{ "/css/vendor/jsvectormap/jsvectormap.min.css" | relURL }}">
+<link rel="stylesheet" href="{{ "/css/travel.css" | relURL }}">
+{{ end }}
+
+{{ define "main" }}
+{{ $continents := site.Data.travel.continents }}
+{{ $countryCount := 0 }}
+{{ range $continents }}{{ $countryCount = add $countryCount (len .countries) }}{{ end }}
+
+<header class="profile">
+    <img class="avatar" alt="avatar" src="{{ "/images/ali_hajimirza.jpg" | relURL }}" />
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<h2>{{ . | markdownify }}</h2>{{ end }}
+    <p class="travel-summary">I've visited {{ $countryCount }} countries on {{ len $continents }} continents:</p>
+</header>
+
+<div id="travel-page">
+  <div id="travel-map-container">
+    <div id="travel-map"></div>
+  </div>
+
+  <div class="travel-legend">
+    {{ range $continents }}
+    <span class="legend-item">
+      <span class="swatch" style="background:{{ .color }}"></span> {{ .name }}
+    </span>
+    {{ end }}
+  </div>
+
+  <table id="travel-countries">
+    {{ range $continents }}
+    <tr>
+      <td class="continent-name">{{ .name }}</td>
+      <td class="continent-flags">
+        {{ range .countries }}
+        <span class="flag" data-code="{{ .code }}" title="{{ .name }}"></span>
+        {{ end }}
+      </td>
+    </tr>
+    {{ end }}
+  </table>
+</div>
+
+<script src="{{ "/js/vendor/jsvectormap/jsvectormap.min.js" | relURL }}"></script>
+<script src="{{ "/js/vendor/jsvectormap/world.js" | relURL }}"></script>
+<script>
+(function () {
+  var continents = {{ $continents | jsonify | safeJS }};
+
+  var regions = continents.map(function (continent) {
+    var values = {};
+    continent.countries.forEach(function (c) { values[c.code] = 1; });
+    return {
+      values: values,
+      scale: ["#ff00ff", continent.color],
+      normalizeFunction: "polynomial"
+    };
+  });
+
+  new jsVectorMap({
+    selector: "#travel-map",
+    map: "world",
+    zoomButtons: true,
+    zoomOnScroll: false,
+    regionsSelectable: false,
+    regionStyle: {
+      initial: { fill: "#e8e8e8" }
+    },
+    series: {
+      regions: regions
+    }
+  });
+
+  document.querySelectorAll("#travel-countries .flag").forEach(function (el) {
+    var code = el.getAttribute("data-code");
+    var flag = code.replace(/./g, function (c) {
+      return String.fromCodePoint(0x1F1E6 + c.charCodeAt(0) - "A".charCodeAt(0));
+    });
+    el.textContent = flag;
+  });
+})();
+</script>
+{{ end }}
