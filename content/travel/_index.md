@@ -1,4 +1,4 @@
 ---
 title: Travel
-description: Places I've visited.
+description: Places I've visited
 ---
