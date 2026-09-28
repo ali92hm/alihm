@@ -225,6 +225,16 @@ nav.navigation a.button {
   color: #bbbbbb;
   font-size: 14px;
 }
+#footer .footer-links {
+  margin: 10px auto;
+}
+#footer .footer-links a {
+  margin: 0 8px;
+  color: #bbbbbb;
+}
+#footer .footer-links a:hover {
+  color: #0366d6;
+}
 #footer .copyright {
   margin: 20px auto;
   font-size: 15px;

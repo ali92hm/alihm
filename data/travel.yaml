@@ -1,0 +1,73 @@
+# Colors from https://en.wikipedia.org/wiki/Continent#Number
+continents:
+  - name: North America
+    color: "#00cc00"
+    countries:
+      - code: US
+        name: United States
+      - code: CA
+        name: Canada
+      - code: MX
+        name: Mexico
+  - name: Europe
+    color: "#c10000"
+    countries:
+      - code: FR
+        name: France
+      - code: DE
+        name: Germany
+      - code: IT
+        name: Italy
+      - code: ES
+        name: Spain
+      - code: TR
+        name: Turkey
+      - code: GB
+        name: United Kingdom
+      - code: IE
+        name: Ireland
+  - name: Asia
+    color: "#f33e01"
+    countries:
+      - code: CN
+        name: China
+      - code: HK
+        name: Hong Kong
+      - code: JP
+        name: Japan
+      - code: IR
+        name: Iran
+      - code: TH
+        name: Thailand
+      - code: PH
+        name: Philippines
+      - code: KR
+        name: South Korea
+      - code: SG
+        name: Singapore
+      - code: TW
+        name: Taiwan
+      - code: AE
+        name: United Arab Emirates
+  - name: Oceania
+    color: "#c04080"
+    countries:
+      - code: AU
+        name: Australia
+      - code: FJ
+        name: Fiji
+
+# Marked with a star on the map, in addition to their continent color.
+livedIn:
+  - code: US
+    name: United States
+    lat: 38.9072
+    lng: -77.0369
+  - code: IR
+    name: Iran
+    lat: 35.6892
+    lng: 51.3890
+  - code: FR
+    name: France
+    lat: 48.8566
+    lng: 2.3522
