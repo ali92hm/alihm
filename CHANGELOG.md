@@ -4,6 +4,8 @@
 
 * Bump Hugo version to 0.167.0
 * Update `peaceiris/actions-hugo` from v2 to v3 in CI workflows
+* Replace removed `.Site.RSSLink` and `.Site.DisqusShortname` template fields with their current equivalents
+* Rename `languageCode` to `locale` in config.yml per Hugo v0.158.0 deprecation
 
 ## [6.7.0] - 2022-10-08
 
