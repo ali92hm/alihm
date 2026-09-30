@@ -1,5 +1,5 @@
 {{ define "extra_head" }}
-<link rel="stylesheet" href="{{ "/css/vendor/jsvectormap/jsvectormap.min.css" | relURL }}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.6.0/dist/css/jsvectormap.min.css">
 <link rel="stylesheet" href="{{ "/css/travel.css" | relURL }}">
 {{ end }}
 
@@ -53,8 +53,8 @@
   </table>
 </div>
 
-<script src="{{ "/js/vendor/jsvectormap/jsvectormap.min.js" | relURL }}"></script>
-<script src="{{ "/js/vendor/jsvectormap/world.js" | relURL }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.6.0/dist/js/jsvectormap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.6.0/dist/maps/world.js"></script>
 <script>
 (function () {
   var continents = {{ $continents | jsonify | safeJS }};

@@ -14,7 +14,8 @@ There is no Hugo theme module or submodule; the theme code was vendored into
 `layouts/` and `static/` and is maintained by hand. Upstream changes are ported
 manually (see the 6.7.0 entry in `CHANGELOG.md` for how that is recorded).
 
-No JS build, no npm, no package.json. Hugo is the only required tool.
+No JS build, no npm, no package.json. Hugo is the only required tool. Third-party
+assets (Font Awesome, jsvectormap, KaTeX) are loaded from CDNs, not vendored.
 
 ## Commands
 
@@ -58,7 +59,6 @@ layouts/
     svgs/*.svg                 templated SVGs — called as partials with (dict "fill" .. "width" .. "height" ..)
 static/
   css/{landing,blog,ie8,ie9,noscript}.css
-  css/vendor/font-awesome-4.7.0/  self-hosted Font Awesome (used by the landing page icons only)
   images/                      avatar, landing background, favicon, per-post images
 scripts/{build,clean,deploy}.sh
 .github/workflows/{build,release}.yml
