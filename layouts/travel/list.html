@@ -4,8 +4,8 @@
 {{ end }}
 
 {{ define "main" }}
-{{ $continents := site.Data.travel.continents }}
-{{ $livedIn := site.Data.travel.livedIn }}
+{{ $continents := hugo.Data.travel.continents }}
+{{ $livedIn := hugo.Data.travel.livedIn }}
 {{ $livedCodes := slice }}
 {{ range $livedIn }}{{ $livedCodes = $livedCodes | append .code }}{{ end }}
 {{ $countryCount := 0 }}

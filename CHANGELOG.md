@@ -1,5 +1,9 @@
 # Changelog
 
+## [6.9.1] - 2026-09-30
+
+* Replace deprecated `site.Data` with `hugo.Data` in the travel page template
+
 ## [6.9.0] - 2026-09-30
 
 * Stop vendoring third-party assets: load Font Awesome 6.7.2 from cdnjs and jsvectormap (JS, CSS, world map) from jsDelivr instead of serving copies from `static/`
